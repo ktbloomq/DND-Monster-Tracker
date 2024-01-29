@@ -3,7 +3,7 @@ import { Toast } from "react-bootstrap";
 import Roll from "./log"
 import Card from "./Card";
 import MyMonster, { roll } from "./MyMonster";
-import data from "./Monsters.json";
+import monsters from "./Monsters.json";
 
 export default function Monsters() {
     const [filteredMonsters, setFilteredMonsters] = useState([])
@@ -11,8 +11,10 @@ export default function Monsters() {
     const [diceLog, setDiceLog] = useState([]);
     const [showLog, setShowLog] = useState("inherit");
     const [search, setSearch] = useState("");
+    const [CRfilter, SetCRfilter] = useState("0-2");
 
-    let monsters = data.data.monsters;
+    // console.log(data);
+    // let monsters = data.data.monsters;
 
     const toggleLog = function() {
         if(showLog === "inherit") {
@@ -23,8 +25,10 @@ export default function Monsters() {
     }
 
     useEffect(() => {
-        setFilteredMonsters(monsters.filter((item) => item.index.includes(search)));
-    }, [search, monsters]);
+        let min = Number(CRfilter[0]);
+        let max = Number(CRfilter[2]);
+        setFilteredMonsters(monsters.filter((m) => (m.index.includes(search) && m.challenge_rating>=min &&m.challenge_rating<=max)));
+    }, [search, monsters, CRfilter]);
 
     return (
         <div  data-bs-theme="dark" className="text-light m-3">
@@ -54,7 +58,17 @@ export default function Monsters() {
                 //<MyMonster key={index} uri="/api/monsters/giant-boar" />
             ))}
             <h1>All Monsters</h1>
-            <input type="text" className="form-control" onChange={(event) => setSearch(event.target.value)}></input>
+            <div className="form-floating mb-3">
+                <input type="text" className="form-control" onChange={(event) => setSearch(event.target.value)} placeholder=""></input>
+                <label>Search Monster</label>
+            </div>
+            <div className="form-floating mb-3">
+                <input type="text" className="form-control" id="CRfilter" placeholder="0-2"
+                    onChange={(e) => SetCRfilter(e.target.value)}></input>
+                <label>Challenge Rating (0-2)</label>
+                
+            </div>
+
             <div className="row">
             {filteredMonsters.map((monster, index) => (
                 <Card key={index} monster={monster} onAdd={() => setMyMonsters([...myMonsters, monster])} />
