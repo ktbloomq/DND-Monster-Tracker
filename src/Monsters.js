@@ -28,25 +28,27 @@ export default function Monsters() {
         let min = Number(CRfilter[0]);
         let max = Number(CRfilter[2]);
         setFilteredMonsters(monsters.filter((m) => (m.index.includes(search) && m.challenge_rating>=min &&m.challenge_rating<=max)));
-    }, [search, monsters, CRfilter]);
+    }, [search, CRfilter]);
 
     return (
         <div  data-bs-theme="dark" className="text-light m-3">
-            <div style={{position:"fixed", bottom:"10px", right:"10px"}}>
-                <div style={{display:showLog}}>
-                    {diceLog.map((msg, index) => (
-                        <Toast key={index} onClose={() => setDiceLog(diceLog.filter((item, i) => i !== index))}>
-                            <Toast.Header>
-                                <div className="me-auto">
-                                    {msg.creature}
-                                </div>
-                            </Toast.Header>
-                            <Toast.Body>{msg.type}:{msg.dice}:{msg.result}</Toast.Body>
-                        </Toast>
-                    ))}
-                </div>
-                <button className="btn btn-primary float-end" onClick={toggleLog}>X</button>
-            </div>
+            {/* Dice Log */}
+            { diceLog.length>0 ?
+                <div style={{position:"fixed", bottom:"10px", right:"10px", zIndex:"1"}}>
+                    <div style={{display:showLog}}>
+                        {diceLog.map((msg, index) => (
+                            <Toast key={index} onClose={() => setDiceLog(diceLog.filter((item, i) => i !== index))}>
+                                <Toast.Header>
+                                    <div className="me-auto">
+                                        {msg.creature}
+                                    </div>
+                                </Toast.Header>
+                                <Toast.Body>{msg.type}:{msg.dice}:{msg.result}</Toast.Body>
+                            </Toast>
+                        ))}
+                    </div>
+                    <button className="btn btn-primary float-end" onClick={toggleLog}>X</button>
+                </div> : <></>}
             <h1>Straight Roll</h1>
             <input type="text" className="form-control" onKeyDown={(e) => {
                 if(e.key === "Enter"){setDiceLog([...diceLog, new Roll("manual", "", e.target.value, roll(e.target.value))])}}}></input>
@@ -71,7 +73,7 @@ export default function Monsters() {
 
             <div className="row">
             {filteredMonsters.map((monster, index) => (
-                <Card key={index} monster={monster} onAdd={() => setMyMonsters([...myMonsters, monster])} />
+                <Card key={index} monster={monster} onAdd={() => setMyMonsters([...myMonsters, monster])} index={index} />
             ))}
             </div>
         </div>

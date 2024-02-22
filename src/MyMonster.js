@@ -51,6 +51,14 @@ export default function MyMonster({ monster, onRoll, onDelete }) {
 
     // const [monster, setMonster] = useState();
     const [hp, setHp] = useState(0);
+    const modifiers = {
+        strength: calcAbilityMod(monster.strength),
+        dexterity: calcAbilityMod(monster.dexterity),
+        constitution: calcAbilityMod(monster.constitution),
+        intelligence: calcAbilityMod(monster.intelligence),
+        wisdom: calcAbilityMod(monster.wisdom),
+        charisma: calcAbilityMod(monster.charisma),
+    };
 
     useEffect(() => {
         setHp(monster.hit_points);
@@ -76,36 +84,52 @@ export default function MyMonster({ monster, onRoll, onDelete }) {
                         <input type="number" className="form-control ms-2" style={{display:"inline",width:"50%"}}
                         onKeyDown={processHealth}></input>
                     </div>
-                    <div>Speed {monster.speed.walk}</div>
+                    <div>Speed {monster.speed.walk}
+                        {monster.speed.burrow ? <>, burrow {monster.speed.burrow}</> : <></>}
+                        {monster.speed.climb ? <>, climb {monster.speed.climb}</> : <></>}
+                        {monster.speed.fly ? <>, fly {monster.speed.fly}</> : <></>}
+                        {monster.speed.hover ? <>, hover {monster.speed.hover}</> : <></>}
+                        {monster.speed.swim ? <>, swim {monster.speed.swim}</> : <></>}
+                    </div>
                     <hr />
+                    {/* Abilities */}
                     <div className="row">
                         <div className="col text-center" onClick={() => onRoll("STR", "1d20+mod", rollAbility(monster.strength))}>
                             <div>STR</div>
-                            <div>{monster.strength} ({calcAbilityMod(monster.strength)})</div>
+                            <div>{monster.strength} ({modifiers.strength})</div>
                         </div>
                         <div className="col text-center" onClick={() => onRoll("DEX", "1d20+mod", rollAbility(monster.dexterity))}>
                             <div>DEX</div>
-                            <div>{monster.dexterity} ({calcAbilityMod(monster.dexterity)})</div>
+                            <div>{monster.dexterity} ({modifiers.dexterity})</div>
                         </div>
                         <div className="col text-center" onClick={() => onRoll("CON", "1d20+mod", rollAbility(monster.constitution))}>
                             <div>CON</div>
-                            <div>{monster.constitution} ({calcAbilityMod(monster.constitution)})</div>
+                            <div>{monster.constitution} ({modifiers.constitution})</div>
                         </div>
                         <div className="col text-center" onClick={() => onRoll("INT", "1d20+mod", rollAbility(monster.intelligence))}>
                             <div>INT</div>
-                            <div>{monster.intelligence} ({calcAbilityMod(monster.intelligence)})</div>
+                            <div>{monster.intelligence} ({modifiers.intelligence})</div>
                         </div>
                         <div className="col text-center" onClick={() => onRoll("WIS", "1d20+mod", rollAbility(monster.wisdom))}>
                             <div>WIS</div>
-                            <div>{monster.wisdom} ({calcAbilityMod(monster.wisdom)})</div>
+                            <div>{monster.wisdom} ({modifiers.wisdom})</div>
                         </div>
                         <div className="col text-center" onClick={() => onRoll("CHA", "1d20+mod", rollAbility(monster.charisma))}>
                             <div>CHA</div>
-                            <div>{monster.charisma} ({calcAbilityMod(monster.charisma)})</div>
+                            <div>{monster.charisma} ({modifiers.charisma})</div>
                         </div>
                     </div>
                     <hr />
-
+                    <div>Skills: {monster.proficiencies.map((proficiency, index) => (
+                        <span key={index}>{proficiency.proficiency.name.substr(7)} +{proficiency.value} </span>
+                    ))}</div>
+                    <div>Senses:
+                        {monster.senses.blindsight ? <> Blindsight {monster.senses.blindsight}</> : <></>}
+                        {monster.senses.darkvision ? <> Darkvision {monster.senses.darkvision}</> : <></>}
+                        {monster.senses.tremorsense ? <> Tremorsense {monster.senses.tremorsense}</> : <></>}
+                        {monster.senses.truesight ? <> Truesight {monster.senses.truesight}</> : <></>}
+                        {monster.senses.passive_perception ? <> Passive Perception {monster.senses.passive_perception}</> : <></>}
+                    </div>
                 </div>
                 <div className="col">
                     {monster.special_abilities ? monster.special_abilities.map((sa, index) => (
