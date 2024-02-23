@@ -3,7 +3,8 @@ import { Toast } from "react-bootstrap";
 import Roll from "./log"
 import Card from "./Card";
 import MyMonster, { roll } from "./MyMonster";
-import monsters from "./Monsters.json";
+// import monsters from "./Monsters.json";
+import monsters2 from "./Monsters2.json";
 
 export default function Monsters() {
     const [filteredMonsters, setFilteredMonsters] = useState([])
@@ -13,8 +14,7 @@ export default function Monsters() {
     const [search, setSearch] = useState("");
     const [CRfilter, SetCRfilter] = useState("0-2");
 
-    // console.log(data);
-    // let monsters = data.data.monsters;
+    let monsters = monsters2.results;
 
     const toggleLog = function() {
         if(showLog === "inherit") {
@@ -27,7 +27,7 @@ export default function Monsters() {
     useEffect(() => {
         let min = Number(CRfilter[0]);
         let max = Number(CRfilter[2]);
-        setFilteredMonsters(monsters.filter((m) => (m.index.includes(search) && m.challenge_rating>=min &&m.challenge_rating<=max)));
+        setFilteredMonsters(monsters.filter((m) => (m.slug.includes(search) && m.cr>=min &&m.cr<=max)));
     }, [search, CRfilter]);
 
     return (

@@ -36,11 +36,11 @@ export default function Card({ monster, onAdd, index }) {
                 <div>{monster.charisma}</div>
               </div>
             </div>
-            <div>AC {monster.armor_class[0].value}</div>
+            <div>AC {monster.armor_class}</div>
             {monster.actions ? monster.actions.map((action, index) => (
               <div key={index}>
                 <span>{action.name}:
-                {action.damage ? action.damage[0].damage_dice : ""}</span>
+                {action.damage_dice ? action.damage_dice+"+"+action.damage_bonus : ""}</span>
               </div>
             )) : <></>}
           </div>

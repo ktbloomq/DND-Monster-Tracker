@@ -79,7 +79,7 @@ export default function MyMonster({ monster, onRoll, onDelete }) {
                     <strong className="fs-2 mx-2">{monster.name}</strong>
                     <button className="btn btn-outline-danger" onClick={onDelete}>Delete</button>
                     <hr />
-                    <div>Armor Class {monster.armor_class[0].value}</div>
+                    <div>Armor Class {monster.armor_class}</div>
                     <div>Hit Points {hp}
                         <input type="number" className="form-control ms-2" style={{display:"inline",width:"50%"}}
                         onKeyDown={processHealth}></input>
@@ -120,16 +120,10 @@ export default function MyMonster({ monster, onRoll, onDelete }) {
                         </div>
                     </div>
                     <hr />
-                    <div>Skills: {monster.proficiencies.map((proficiency, index) => (
-                        <span key={index}>{proficiency.proficiency.name.substr(7)} +{proficiency.value} </span>
+                    <div>Skills: {Object.keys(monster.skills).map((key, index) => (
+                        <span key={index}>{key} +{monster.skills[key]} </span>
                     ))}</div>
-                    <div>Senses:
-                        {monster.senses.blindsight ? <> Blindsight {monster.senses.blindsight}</> : <></>}
-                        {monster.senses.darkvision ? <> Darkvision {monster.senses.darkvision}</> : <></>}
-                        {monster.senses.tremorsense ? <> Tremorsense {monster.senses.tremorsense}</> : <></>}
-                        {monster.senses.truesight ? <> Truesight {monster.senses.truesight}</> : <></>}
-                        {monster.senses.passive_perception ? <> Passive Perception {monster.senses.passive_perception}</> : <></>}
-                    </div>
+                    <div>Senses: {monster.senses}</div>
                 </div>
                 <div className="col">
                     {monster.special_abilities ? monster.special_abilities.map((sa, index) => (
