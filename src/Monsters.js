@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { Toast } from "react-bootstrap";
-import Roll from "./log"
+import LogRoll from "./log"
 import Card from "./Card";
-import MyMonster, { roll } from "./MyMonster";
+import { roll } from "./die";
+import MyMonster from "./MyMonster";
 // import monsters from "./Monsters.json";
 import monsters2 from "./Monsters2.json";
 
@@ -28,7 +29,7 @@ export default function Monsters() {
         let min = Number(CRfilter[0]);
         let max = Number(CRfilter[2]);
         setFilteredMonsters(monsters.filter((m) => (m.slug.includes(search) && m.cr>=min &&m.cr<=max)));
-    }, [search, CRfilter]);
+    }, [search, monsters, CRfilter]);
 
     return (
         <div  data-bs-theme="dark" className="text-light m-3">
@@ -51,11 +52,11 @@ export default function Monsters() {
                 </div> : <></>}
             <h1>Straight Roll</h1>
             <input type="text" className="form-control" onKeyDown={(e) => {
-                if(e.key === "Enter"){setDiceLog([...diceLog, new Roll("manual", "", e.target.value, roll(e.target.value))])}}}></input>
+                if(e.key === "Enter"){setDiceLog([...diceLog, new LogRoll("manual", "", e.target.value, roll(e.target.value))])}}}></input>
             <h1>My Monsters</h1>
             {myMonsters.map((myMonster, index) => (
                 <MyMonster key={index} monster={myMonster} 
-                    onRoll={(type, dice, result) => setDiceLog([...diceLog, new Roll(myMonster.name+index, type, dice, result)])}
+                    onRoll={(type, dice) => setDiceLog([...diceLog, new LogRoll(myMonster.name+index, type, dice)])}
                     onDelete={() => setMyMonsters(myMonsters.filter((item, i) => i !== index))} />
                 //<MyMonster key={index} uri="/api/monsters/giant-boar" />
             ))}
