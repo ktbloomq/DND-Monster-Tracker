@@ -1,9 +1,9 @@
 export default function Card({ monster, onAdd, index }) {
     return (
       <div id={"monster-"+index} className="col-12 col-lg-6 col-xl-4 col-xxl-3">
-        <div className="border my-2 p-2">
+        <div className="border my-2 p-2" data-bs-toggle="collapse" href={"#monster-"+index+"-info"}>
           <div className="d-flex align-items-center">
-            <strong className="fs-4" data-bs-toggle="collapse" href={"#monster-"+index+"-info"}>{monster.name}</strong>
+            <strong className="fs-4">{monster.name}</strong>
             <span className="ms-2">CR {monster.challenge_rating} HP {monster.hit_points}</span>
             {/* <button className="btn btn-outline-primary ms-auto" data-bs-toggle="collapse" data-bs-target={"#monster-"+index+"-info"}>preview</button> */}
             <button className="btn btn-outline-primary ms-auto" onClick={onAdd}>add</button>
