@@ -4,8 +4,7 @@ import LogRoll from "./log"
 import Card from "./Card";
 import { roll } from "./die";
 import MyMonster from "./MyMonster";
-// import monsters from "./Monsters.json";
-import monsters2 from "./Monsters2.json";
+import monsters from "./Monsters.json";
 
 export default function Monsters() {
     const [filteredMonsters, setFilteredMonsters] = useState([])
@@ -14,8 +13,6 @@ export default function Monsters() {
     const [showLog, setShowLog] = useState("inherit");
     const [search, setSearch] = useState("");
     const [CRfilter, SetCRfilter] = useState("0-2");
-
-    let monsters = monsters2.results;
 
     const toggleLog = function() {
         if(showLog === "inherit") {
@@ -28,7 +25,7 @@ export default function Monsters() {
     useEffect(() => {
         let min = Number(CRfilter[0]);
         let max = Number(CRfilter[2]);
-        setFilteredMonsters(monsters.filter((m) => (m.slug.includes(search) && m.cr>=min &&m.cr<=max)));
+        setFilteredMonsters(monsters.results.filter((m) => (m.slug.includes(search) && m.cr>=min &&m.cr<=max)));
     }, [search, monsters, CRfilter]);
 
     return (
