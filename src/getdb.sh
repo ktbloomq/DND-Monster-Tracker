@@ -1,1 +1,1 @@
-curl --location 'https://api.open5e.com/monsters/?cr__lte=2&type__iexact=beast&ordering=-cr' -o Monsters.json
+curl --location 'https://api.open5e.com/monsters/?cr__lte=2&type__iexact=beast&ordering=-cr&document__slug=wotc-srd' -o Monsters.json
