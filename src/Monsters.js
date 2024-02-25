@@ -5,6 +5,7 @@ import Card from "./Card";
 import { roll } from "./die";
 import MyMonster from "./MyMonster";
 import monsters from "./Monsters.json";
+import HomebrewMonsters from "./HomebrewMonsters.json";
 
 export default function Monsters() {
     const [filteredMonsters, setFilteredMonsters] = useState([])
@@ -25,7 +26,7 @@ export default function Monsters() {
     useEffect(() => {
         let min = Number(CRfilter[0]);
         let max = Number(CRfilter[2]);
-        setFilteredMonsters(monsters.results.filter((m) => (m.slug.includes(search) && m.cr>=min &&m.cr<=max)));
+        setFilteredMonsters(monsters.results.concat(HomebrewMonsters).filter((m) => (m.slug.includes(search) && m.cr>=min &&m.cr<=max)));
     }, [search, monsters, CRfilter]);
 
     return (
