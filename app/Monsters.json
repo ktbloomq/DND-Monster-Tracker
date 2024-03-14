@@ -1,0 +1,3913 @@
+{
+    "count": 88,
+    "next": "https://api.open5e.com/monsters/?cr__lte=2&document__slug=wotc-srd&ordering=-cr&page=2&type__iexact=beast",
+    "previous": null,
+    "results": [
+        {
+            "slug": "giant-boar",
+            "desc": "",
+            "name": "Giant Boar",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 12,
+            "armor_desc": "natural armor",
+            "hit_points": 42,
+            "hit_dice": "5d10+15",
+            "speed": {
+                "walk": 40
+            },
+            "strength": 17,
+            "dexterity": 10,
+            "constitution": 16,
+            "intelligence": 2,
+            "wisdom": 7,
+            "charisma": 5,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 8",
+            "languages": "",
+            "challenge_rating": "2",
+            "cr": 2.0,
+            "actions": [
+                {
+                    "name": "Tusk",
+                    "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.",
+                    "attack_bonus": 5,
+                    "damage_dice": "2d6",
+                    "damage_bonus": 3
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Charge",
+                    "desc": "If the boar moves at least 20 ft. straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
+                    "attack_bonus": 0,
+                    "damage_dice": "2d6"
+                },
+                {
+                    "name": "Relentless (Recharges after a Short or Long Rest)",
+                    "desc": "If the boar takes 10 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 373,
+            "environments": [
+                "Hill",
+                "Jungle",
+                "Feywild",
+                "Grassland",
+                "Forest"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "giant-constrictor-snake",
+            "desc": "",
+            "name": "Giant Constrictor Snake",
+            "size": "Huge",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 12,
+            "armor_desc": null,
+            "hit_points": 60,
+            "hit_dice": "8d12+8",
+            "speed": {
+                "walk": 30,
+                "swim": 30
+            },
+            "strength": 19,
+            "dexterity": 14,
+            "constitution": 12,
+            "intelligence": 1,
+            "wisdom": 10,
+            "charisma": 3,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": 2,
+            "skills": {
+                "perception": 2
+            },
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "blindsight 10 ft., passive Perception 12",
+            "languages": "",
+            "challenge_rating": "2",
+            "cr": 2.0,
+            "actions": [
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one creature. Hit: 11 (2d6 + 4) piercing damage.",
+                    "attack_bonus": 6,
+                    "damage_dice": "2d6",
+                    "damage_bonus": 4
+                },
+                {
+                    "name": "Constrict",
+                    "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 13 (2d8 + 4) bludgeoning damage, and the target is grappled (escape DC 16). Until this grapple ends, the creature is restrained, and the snake can't constrict another target.",
+                    "attack_bonus": 6,
+                    "damage_dice": "2d8",
+                    "damage_bonus": 4
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": null,
+            "spell_list": [],
+            "page_no": 374,
+            "environments": [
+                "Underdark",
+                "Underwater",
+                "Swamp",
+                "Jungle",
+                "Forest"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "giant-elk",
+            "desc": "The majestic **giant elk** is rare to the point that its appearance is often taken as a foreshadowing of an important event, such as the birth of a king. Legends tell of gods that take the form of giant elk when visiting the Material Plane. Many cultures therefore believe that to hunt these creatures is to invite divine wrath.",
+            "name": "Giant Elk",
+            "size": "Huge",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 15,
+            "armor_desc": "natural armor",
+            "hit_points": 42,
+            "hit_dice": "5d12+10",
+            "speed": {
+                "walk": 60
+            },
+            "strength": 19,
+            "dexterity": 16,
+            "constitution": 14,
+            "intelligence": 7,
+            "wisdom": 14,
+            "charisma": 10,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": 4,
+            "skills": {
+                "perception": 4
+            },
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 14",
+            "languages": "Giant Elk, understands Common, Elvish, and Sylvan but can't speak",
+            "challenge_rating": "2",
+            "cr": 2.0,
+            "actions": [
+                {
+                    "name": "Ram",
+                    "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.",
+                    "attack_bonus": 6,
+                    "damage_dice": "2d6",
+                    "damage_bonus": 4
+                },
+                {
+                    "name": "Hooves",
+                    "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one prone creature. Hit: 22 (4d8 + 4) bludgeoning damage.",
+                    "attack_bonus": 6,
+                    "damage_dice": "4d8",
+                    "damage_bonus": 4
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Charge",
+                    "desc": "If the elk moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.",
+                    "attack_bonus": 0,
+                    "damage_dice": "2d6"
+                }
+            ],
+            "spell_list": [],
+            "page_no": 375,
+            "environments": [
+                "Hill",
+                "Grassland",
+                "Mountain",
+                "Tundra",
+                "Forest"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "hunter-shark",
+            "desc": "Smaller than a giant shark but larger and fiercer than a reef shark, a **hunter shark** haunts deep waters. It usually hunts alone, but multiple hunter sharks might feed in the same area. A fully grown hunter shark is 15 to 20 feet long.",
+            "name": "Hunter Shark",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 12,
+            "armor_desc": "natural armor",
+            "hit_points": 45,
+            "hit_dice": "6d10+12",
+            "speed": {
+                "swim": 40
+            },
+            "strength": 18,
+            "dexterity": 13,
+            "constitution": 15,
+            "intelligence": 1,
+            "wisdom": 10,
+            "charisma": 4,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": 2,
+            "skills": {
+                "perception": 2
+            },
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "darkvision 30 ft., passive Perception 12",
+            "languages": "",
+            "challenge_rating": "2",
+            "cr": 2.0,
+            "actions": [
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage.",
+                    "attack_bonus": 6,
+                    "damage_dice": "2d8",
+                    "damage_bonus": 4
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Blood Frenzy",
+                    "desc": "The shark has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+                },
+                {
+                    "name": "Water Breathing",
+                    "desc": "The shark can breathe only underwater."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 382,
+            "environments": [
+                "Underwater",
+                "Water"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "plesiosaurus",
+            "desc": "",
+            "name": "Plesiosaurus",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Dinosaurs",
+            "alignment": "unaligned",
+            "armor_class": 13,
+            "armor_desc": "natural armor",
+            "hit_points": 68,
+            "hit_dice": "8d10+24",
+            "speed": {
+                "walk": 20,
+                "swim": 40
+            },
+            "strength": 18,
+            "dexterity": 15,
+            "constitution": 16,
+            "intelligence": 2,
+            "wisdom": 12,
+            "charisma": 5,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": 3,
+            "skills": {
+                "perception": 3,
+                "stealth": 4
+            },
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 13",
+            "languages": "",
+            "challenge_rating": "2",
+            "cr": 2.0,
+            "actions": [
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (3d6 + 4) piercing damage.",
+                    "attack_bonus": 6,
+                    "damage_dice": "3d6",
+                    "damage_bonus": 4
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Hold Breath",
+                    "desc": "The plesiosaurus can hold its breath for 1 hour."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 279,
+            "environments": [
+                "Underwater",
+                "Coastal",
+                "Plane Of Water",
+                "Desert",
+                "Water"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "polar-bear",
+            "desc": "",
+            "name": "Polar Bear",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 12,
+            "armor_desc": "natural armor",
+            "hit_points": 42,
+            "hit_dice": "5d10+15",
+            "speed": {
+                "walk": 40,
+                "swim": 30
+            },
+            "strength": 20,
+            "dexterity": 10,
+            "constitution": 16,
+            "intelligence": 2,
+            "wisdom": 13,
+            "charisma": 7,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": 3,
+            "skills": {
+                "perception": 3
+            },
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 13",
+            "languages": "",
+            "challenge_rating": "2",
+            "cr": 2.0,
+            "actions": [
+                {
+                    "name": "Multiattack",
+                    "desc": "The bear makes two attacks: one with its bite and one with its claws."
+                },
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) piercing damage.",
+                    "attack_bonus": 7,
+                    "damage_dice": "1d8",
+                    "damage_bonus": 5
+                },
+                {
+                    "name": "Claws",
+                    "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.",
+                    "attack_bonus": 7,
+                    "damage_dice": "2d6",
+                    "damage_bonus": 5
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Keen Smell",
+                    "desc": "The bear has advantage on Wisdom (Perception) checks that rely on smell."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 386,
+            "environments": [
+                "Tundra",
+                "Underdark",
+                "Arctic"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "rhinoceros",
+            "desc": "",
+            "name": "Rhinoceros",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 11,
+            "armor_desc": "natural armor",
+            "hit_points": 45,
+            "hit_dice": "6d10+12",
+            "speed": {
+                "walk": 40
+            },
+            "strength": 21,
+            "dexterity": 8,
+            "constitution": 15,
+            "intelligence": 2,
+            "wisdom": 12,
+            "charisma": 6,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 11",
+            "languages": "",
+            "challenge_rating": "2",
+            "cr": 2.0,
+            "actions": [
+                {
+                    "name": "Gore",
+                    "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage.",
+                    "attack_bonus": 7,
+                    "damage_dice": "2d8",
+                    "damage_bonus": 5
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Charge",
+                    "desc": "If the rhinoceros moves at least 20 ft. straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.",
+                    "attack_bonus": 0,
+                    "damage_dice": "2d8"
+                }
+            ],
+            "spell_list": [],
+            "page_no": 388,
+            "environments": [
+                "Desert",
+                "Grassland"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "saber-toothed-tiger",
+            "desc": "",
+            "name": "Saber-Toothed Tiger",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 12,
+            "armor_desc": null,
+            "hit_points": 52,
+            "hit_dice": "7d10+14",
+            "speed": {
+                "walk": 40
+            },
+            "strength": 18,
+            "dexterity": 14,
+            "constitution": 15,
+            "intelligence": 3,
+            "wisdom": 12,
+            "charisma": 8,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": 3,
+            "skills": {
+                "perception": 3,
+                "stealth": 6
+            },
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 13",
+            "languages": "",
+            "challenge_rating": "2",
+            "cr": 2.0,
+            "actions": [
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 5) piercing damage.",
+                    "attack_bonus": 6,
+                    "damage_dice": "1d10",
+                    "damage_bonus": 5
+                },
+                {
+                    "name": "Claw",
+                    "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.",
+                    "attack_bonus": 6,
+                    "damage_dice": "2d6",
+                    "damage_bonus": 5
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Keen Smell",
+                    "desc": "The tiger has advantage on Wisdom (Perception) checks that rely on smell."
+                },
+                {
+                    "name": "Pounce",
+                    "desc": "If the tiger moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 388,
+            "environments": [
+                "Jungle",
+                "Mountains",
+                "Mountain",
+                "Tundra",
+                "Forest",
+                "Arctic"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "swarm-of-poisonous-snakes",
+            "desc": "",
+            "name": "Swarm of Poisonous Snakes",
+            "size": "Medium",
+            "type": "Beast",
+            "subtype": "Swarm",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 14,
+            "armor_desc": null,
+            "hit_points": 36,
+            "hit_dice": "8d8",
+            "speed": {
+                "walk": 30,
+                "swim": 30
+            },
+            "strength": 8,
+            "dexterity": 18,
+            "constitution": 11,
+            "intelligence": 1,
+            "wisdom": 10,
+            "charisma": 3,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "bludgeoning, piercing, slashing",
+            "damage_immunities": "",
+            "condition_immunities": "charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
+            "senses": "blindsight 10 ft., passive Perception 10",
+            "languages": "",
+            "challenge_rating": "2",
+            "cr": 2.0,
+            "actions": [
+                {
+                    "name": "Bites",
+                    "desc": "Melee Weapon Attack: +6 to hit, reach 0 ft., one creature in the swarm's space. Hit: 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer. The target must make a DC 10 Constitution saving throw, taking 14 (4d6) poison damage on a failed save, or half as much damage on a successful one.",
+                    "attack_bonus": 6,
+                    "damage_dice": "2d6"
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Swarm",
+                    "desc": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny snake. The swarm can't regain hit points or gain temporary hit points."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 390,
+            "environments": [
+                "Desert",
+                "Sewer",
+                "Mountains",
+                "Forest",
+                "Grassland",
+                "Ruin",
+                "Tomb",
+                "Swamp",
+                "Jungle",
+                "Hills",
+                "Caverns",
+                "Water"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "brown-bear",
+            "desc": "",
+            "name": "Brown Bear",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 11,
+            "armor_desc": "natural armor",
+            "hit_points": 34,
+            "hit_dice": "4d10+12",
+            "speed": {
+                "walk": 40,
+                "climb": 30
+            },
+            "strength": 19,
+            "dexterity": 10,
+            "constitution": 16,
+            "intelligence": 2,
+            "wisdom": 13,
+            "charisma": 7,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": 3,
+            "skills": {
+                "perception": 3
+            },
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 13",
+            "languages": "",
+            "challenge_rating": "1",
+            "cr": 1.0,
+            "actions": [
+                {
+                    "name": "Multiattack",
+                    "desc": "The bear makes two attacks: one with its bite and one with its claws."
+                },
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage.",
+                    "attack_bonus": 5,
+                    "damage_dice": "1d8",
+                    "damage_bonus": 4
+                },
+                {
+                    "name": "Claws",
+                    "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.",
+                    "attack_bonus": 5,
+                    "damage_dice": "2d6",
+                    "damage_bonus": 4
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Keen Smell",
+                    "desc": "The bear has advantage on Wisdom (Perception) checks that rely on smell."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 369,
+            "environments": [
+                "Hill",
+                "Feywild",
+                "Mountains",
+                "Forest",
+                "Arctic"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "dire-wolf",
+            "desc": "",
+            "name": "Dire Wolf",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 14,
+            "armor_desc": "natural armor",
+            "hit_points": 37,
+            "hit_dice": "5d10+10",
+            "speed": {
+                "walk": 50
+            },
+            "strength": 17,
+            "dexterity": 15,
+            "constitution": 15,
+            "intelligence": 3,
+            "wisdom": 12,
+            "charisma": 7,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": 3,
+            "skills": {
+                "perception": 3,
+                "stealth": 4
+            },
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 13",
+            "languages": "",
+            "challenge_rating": "1",
+            "cr": 1.0,
+            "actions": [
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
+                    "attack_bonus": 5,
+                    "damage_dice": "2d6",
+                    "damage_bonus": 3
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Keen Hearing and Smell",
+                    "desc": "The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+                },
+                {
+                    "name": "Pack Tactics",
+                    "desc": "The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 371,
+            "environments": [
+                "Hill",
+                "Mountains",
+                "Tundra",
+                "Forest",
+                "Grassland",
+                "Hills",
+                "Feywild"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "giant-eagle",
+            "desc": "A **giant eagle** is a noble creature that speaks its own language and understands speech in the Common tongue. A mated pair of giant eagles typically has up to four eggs or young in their nest (treat the young as normal eagles).",
+            "name": "Giant Eagle",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "neutral good",
+            "armor_class": 13,
+            "armor_desc": null,
+            "hit_points": 26,
+            "hit_dice": "4d10+4",
+            "speed": {
+                "walk": 10,
+                "fly": 80
+            },
+            "strength": 16,
+            "dexterity": 17,
+            "constitution": 13,
+            "intelligence": 8,
+            "wisdom": 14,
+            "charisma": 10,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": 4,
+            "skills": {
+                "perception": 4
+            },
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 14",
+            "languages": "Giant Eagle, understands Common and Auran but can't speak",
+            "challenge_rating": "1",
+            "cr": 1.0,
+            "actions": [
+                {
+                    "name": "Multiattack",
+                    "desc": "The eagle makes two attacks: one with its beak and one with its talons."
+                },
+                {
+                    "name": "Beak",
+                    "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.",
+                    "attack_bonus": 5,
+                    "damage_dice": "1d6",
+                    "damage_bonus": 3
+                },
+                {
+                    "name": "Talons",
+                    "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.",
+                    "attack_bonus": 5,
+                    "damage_dice": "2d6",
+                    "damage_bonus": 3
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Keen Sight",
+                    "desc": "The eagle has advantage on Wisdom (Perception) checks that rely on sight."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 375,
+            "environments": [
+                "Hill",
+                "Mountains",
+                "Coastal",
+                "Grassland",
+                "Hills",
+                "Feywild",
+                "Mountain",
+                "Desert"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "giant-hyena",
+            "desc": "",
+            "name": "Giant Hyena",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 12,
+            "armor_desc": null,
+            "hit_points": 45,
+            "hit_dice": "6d10+12",
+            "speed": {
+                "walk": 50
+            },
+            "strength": 16,
+            "dexterity": 14,
+            "constitution": 14,
+            "intelligence": 2,
+            "wisdom": 12,
+            "charisma": 7,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": 3,
+            "skills": {
+                "perception": 3
+            },
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 13",
+            "languages": "",
+            "challenge_rating": "1",
+            "cr": 1.0,
+            "actions": [
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage.",
+                    "attack_bonus": 5,
+                    "damage_dice": "1d6",
+                    "damage_bonus": 3
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Rampage",
+                    "desc": "When the hyena reduces a creature to 0 hit points with a melee attack on its turn, the hyena can take a bonus action to move up to half its speed and make a bite attack."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 376,
+            "environments": [
+                "Hill",
+                "Desert",
+                "Shadowfell",
+                "Grassland",
+                "Ruin",
+                "Forest"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "giant-octopus",
+            "desc": "",
+            "name": "Giant Octopus",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 11,
+            "armor_desc": null,
+            "hit_points": 52,
+            "hit_dice": "8d10+8",
+            "speed": {
+                "walk": 10,
+                "swim": 60
+            },
+            "strength": 17,
+            "dexterity": 13,
+            "constitution": 13,
+            "intelligence": 4,
+            "wisdom": 10,
+            "charisma": 4,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": 4,
+            "skills": {
+                "perception": 4,
+                "stealth": 5
+            },
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "darkvision 60 ft., passive Perception 14",
+            "languages": "",
+            "challenge_rating": "1",
+            "cr": 1.0,
+            "actions": [
+                {
+                    "name": "Tentacles",
+                    "desc": "Melee Weapon Attack: +5 to hit, reach 15 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage. If the target is a creature, it is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the octopus can't use its tentacles on another target.",
+                    "attack_bonus": 5,
+                    "damage_dice": "2d6",
+                    "damage_bonus": 3
+                },
+                {
+                    "name": "Ink Cloud (Recharges after a Short or Long Rest)",
+                    "desc": "A 20-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action."
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Hold Breath",
+                    "desc": "While out of water, the octopus can hold its breath for 1 hour."
+                },
+                {
+                    "name": "Underwater Camouflage",
+                    "desc": "The octopus has advantage on Dexterity (Stealth) checks made while underwater."
+                },
+                {
+                    "name": "Water Breathing",
+                    "desc": "The octopus can breathe only underwater."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 377,
+            "environments": [
+                "Underwater",
+                "Water"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "giant-spider",
+            "desc": "To snare its prey, a **giant spider** spins elaborate webs or shoots sticky strands of webbing from its abdomen. Giant spiders are most commonly found underground, making their lairs on ceilings or in dark, web-filled crevices. Such lairs are often festooned with web cocoons holding past victims.",
+            "name": "Giant Spider",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 14,
+            "armor_desc": "natural armor",
+            "hit_points": 26,
+            "hit_dice": "4d10+4",
+            "speed": {
+                "walk": 30,
+                "climb": 30
+            },
+            "strength": 14,
+            "dexterity": 16,
+            "constitution": 12,
+            "intelligence": 2,
+            "wisdom": 11,
+            "charisma": 4,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {
+                "stealth": 7
+            },
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "blindsight 10 ft., darkvision 60 ft., passive Perception 10",
+            "languages": "",
+            "challenge_rating": "1",
+            "cr": 1.0,
+            "actions": [
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 7 (1d8 + 3) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
+                    "attack_bonus": 5,
+                    "damage_dice": "1d8",
+                    "damage_bonus": 3
+                },
+                {
+                    "name": "Web (Recharge 5-6)",
+                    "desc": "Ranged Weapon Attack: +5 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).",
+                    "attack_bonus": 5
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Spider Climb",
+                    "desc": "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+                },
+                {
+                    "name": "Web Sense",
+                    "desc": "While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+                },
+                {
+                    "name": "Web Walker",
+                    "desc": "The spider ignores movement restrictions caused by webbing."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 379,
+            "environments": [
+                "Underdark",
+                "Urban",
+                "Forest",
+                "Ruin",
+                "Swamp",
+                "Jungle",
+                "Feywild",
+                "Shadowfell",
+                "Caverns"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "giant-toad",
+            "desc": "",
+            "name": "Giant Toad",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 11,
+            "armor_desc": null,
+            "hit_points": 39,
+            "hit_dice": "6d10+6",
+            "speed": {
+                "walk": 20,
+                "swim": 40
+            },
+            "strength": 15,
+            "dexterity": 13,
+            "constitution": 13,
+            "intelligence": 2,
+            "wisdom": 10,
+            "charisma": 3,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "darkvision 30 ft., passive Perception 10",
+            "languages": "",
+            "challenge_rating": "1",
+            "cr": 1.0,
+            "actions": [
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage plus 5 (1d10) poison damage, and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the toad can't bite another target.",
+                    "attack_bonus": 4,
+                    "damage_dice": "1d10",
+                    "damage_bonus": 2
+                },
+                {
+                    "name": "Swallow",
+                    "desc": "The toad makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the toad, and it takes 10 (3d6) acid damage at the start of each of the toad's turns. The toad can have only one target swallowed at a time.\nIf the toad dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone."
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Amphibious",
+                    "desc": "The toad can breathe air and water"
+                },
+                {
+                    "name": "Standing Leap",
+                    "desc": "The toad's long jump is up to 20 ft. and its high jump is up to 10 ft., with or without a running start."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 380,
+            "environments": [
+                "Underdark",
+                "Coastal",
+                "Forest",
+                "Swamp",
+                "Jungle",
+                "Water",
+                "Desert"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "giant-vulture",
+            "desc": "",
+            "name": "Giant Vulture",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "neutral evil",
+            "armor_class": 10,
+            "armor_desc": null,
+            "hit_points": 22,
+            "hit_dice": "3d10+6",
+            "speed": {
+                "walk": 10,
+                "fly": 60
+            },
+            "strength": 15,
+            "dexterity": 10,
+            "constitution": 15,
+            "intelligence": 6,
+            "wisdom": 12,
+            "charisma": 7,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": 3,
+            "skills": {
+                "perception": 3
+            },
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 13",
+            "languages": "understands Common but can't speak",
+            "challenge_rating": "1",
+            "cr": 1.0,
+            "actions": [
+                {
+                    "name": "Multiattack",
+                    "desc": "The vulture makes two attacks: one with its beak and one with its talons."
+                },
+                {
+                    "name": "Beak",
+                    "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing damage.",
+                    "attack_bonus": 4,
+                    "damage_dice": "2d4",
+                    "damage_bonus": 2
+                },
+                {
+                    "name": "Talons",
+                    "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage.",
+                    "attack_bonus": 4,
+                    "damage_dice": "2d6",
+                    "damage_bonus": 2
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Keen Sight and Smell",
+                    "desc": "The vulture has advantage on Wisdom (Perception) checks that rely on sight or smell."
+                },
+                {
+                    "name": "Pack Tactics",
+                    "desc": "The vulture has advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 380,
+            "environments": [
+                "Desert",
+                "Grassland"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "lion",
+            "desc": "",
+            "name": "Lion",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 12,
+            "armor_desc": null,
+            "hit_points": 26,
+            "hit_dice": "4d10+4",
+            "speed": {
+                "walk": 50
+            },
+            "strength": 17,
+            "dexterity": 15,
+            "constitution": 13,
+            "intelligence": 3,
+            "wisdom": 12,
+            "charisma": 8,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": 3,
+            "skills": {
+                "perception": 3,
+                "stealth": 6
+            },
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 13",
+            "languages": "",
+            "challenge_rating": "1",
+            "cr": 1.0,
+            "actions": [
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage.",
+                    "attack_bonus": 5,
+                    "damage_dice": "1d8",
+                    "damage_bonus": 3
+                },
+                {
+                    "name": "Claw",
+                    "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.",
+                    "attack_bonus": 5,
+                    "damage_dice": "1d6",
+                    "damage_bonus": 3
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Keen Smell",
+                    "desc": "The lion has advantage on Wisdom (Perception) checks that rely on smell."
+                },
+                {
+                    "name": "Pack Tactics",
+                    "desc": "The lion has advantage on an attack roll against a creature if at least one of the lion's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+                },
+                {
+                    "name": "Pounce",
+                    "desc": "If the lion moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the lion can make one bite attack against it as a bonus action."
+                },
+                {
+                    "name": "Running Leap",
+                    "desc": "With a 10-foot running start, the lion can long jump up to 25 ft.."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 383,
+            "environments": [
+                "Hill",
+                "Desert",
+                "Grassland",
+                "Mountain",
+                "Forest"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "swarm-of-quippers",
+            "desc": "",
+            "name": "Swarm of Quippers",
+            "size": "Medium",
+            "type": "Beast",
+            "subtype": "Swarm",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 13,
+            "armor_desc": null,
+            "hit_points": 28,
+            "hit_dice": "8d8-8",
+            "speed": {
+                "walk": 0,
+                "swim": 40
+            },
+            "strength": 13,
+            "dexterity": 16,
+            "constitution": 9,
+            "intelligence": 1,
+            "wisdom": 7,
+            "charisma": 2,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "bludgeoning, piercing, slashing",
+            "damage_immunities": "",
+            "condition_immunities": "charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
+            "senses": "darkvision 60 ft., passive Perception 8",
+            "languages": "",
+            "challenge_rating": "1",
+            "cr": 1.0,
+            "actions": [
+                {
+                    "name": "Bites",
+                    "desc": "Melee Weapon Attack: +5 to hit, reach 0 ft., one creature in the swarm's space. Hit: 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half of its hit points or fewer.",
+                    "attack_bonus": 5,
+                    "damage_dice": "4d6"
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Blood Frenzy",
+                    "desc": "The swarm has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+                },
+                {
+                    "name": "Swarm",
+                    "desc": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny quipper. The swarm can't regain hit points or gain temporary hit points."
+                },
+                {
+                    "name": "Water Breathing",
+                    "desc": "The swarm can breathe only underwater."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 390,
+            "environments": [
+                "Underwater",
+                "Sewer",
+                "Water"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "tiger",
+            "desc": "",
+            "name": "Tiger",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 12,
+            "armor_desc": null,
+            "hit_points": 37,
+            "hit_dice": "5d10+10",
+            "speed": {
+                "walk": 40
+            },
+            "strength": 17,
+            "dexterity": 15,
+            "constitution": 14,
+            "intelligence": 3,
+            "wisdom": 12,
+            "charisma": 8,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": 3,
+            "skills": {
+                "perception": 3,
+                "stealth": 6
+            },
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "darkvision 60 ft., passive Perception 13",
+            "languages": "",
+            "challenge_rating": "1",
+            "cr": 1.0,
+            "actions": [
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage.",
+                    "attack_bonus": 5,
+                    "damage_dice": "1d10",
+                    "damage_bonus": 3
+                },
+                {
+                    "name": "Claw",
+                    "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage."
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Keen Smell",
+                    "desc": "The tiger has advantage on Wisdom (Perception) checks that rely on smell."
+                },
+                {
+                    "name": "Pounce",
+                    "desc": "If the tiger moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 391,
+            "environments": [
+                "Jungle",
+                "Grassland",
+                "Forest"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "ape",
+            "desc": "",
+            "name": "Ape",
+            "size": "Medium",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 12,
+            "armor_desc": null,
+            "hit_points": 19,
+            "hit_dice": "3d8+6",
+            "speed": {
+                "walk": 30,
+                "climb": 30
+            },
+            "strength": 16,
+            "dexterity": 14,
+            "constitution": 14,
+            "intelligence": 6,
+            "wisdom": 12,
+            "charisma": 7,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": 3,
+            "skills": {
+                "athletics": 5,
+                "perception": 3
+            },
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 13",
+            "languages": "",
+            "challenge_rating": "1/2",
+            "cr": 0.5,
+            "actions": [
+                {
+                    "name": "Multiattack",
+                    "desc": "The ape makes two fist attacks."
+                },
+                {
+                    "name": "Fist",
+                    "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.",
+                    "attack_bonus": 5,
+                    "damage_dice": "1d6",
+                    "damage_bonus": 3
+                },
+                {
+                    "name": "Rock",
+                    "desc": "Ranged Weapon Attack: +5 to hit, range 25/50 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.",
+                    "attack_bonus": 5,
+                    "damage_dice": "1d6",
+                    "damage_bonus": 3
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": null,
+            "spell_list": [],
+            "page_no": 366,
+            "environments": [
+                "Jungle",
+                "Forest"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "black-bear",
+            "desc": "",
+            "name": "Black Bear",
+            "size": "Medium",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 11,
+            "armor_desc": "natural armor",
+            "hit_points": 19,
+            "hit_dice": "3d8+6",
+            "speed": {
+                "walk": 40,
+                "climb": 30
+            },
+            "strength": 15,
+            "dexterity": 10,
+            "constitution": 14,
+            "intelligence": 2,
+            "wisdom": 12,
+            "charisma": 7,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 13",
+            "languages": "",
+            "challenge_rating": "1/2",
+            "cr": 0.5,
+            "actions": [
+                {
+                    "name": "Multiattack",
+                    "desc": "The bear makes two attacks: one with its bite and one with its claws."
+                },
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+                    "attack_bonus": 3,
+                    "damage_dice": "1d6",
+                    "damage_bonus": 2
+                },
+                {
+                    "name": "Claws",
+                    "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage.",
+                    "attack_bonus": 3,
+                    "damage_dice": "2d4",
+                    "damage_bonus": 2
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Keen Smell",
+                    "desc": "The bear has advantage on Wisdom (Perception) checks that rely on smell."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 367,
+            "environments": [
+                "Forest",
+                "Mountains"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "crocodile",
+            "desc": "",
+            "name": "Crocodile",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 12,
+            "armor_desc": "natural armor",
+            "hit_points": 19,
+            "hit_dice": "3d10+3",
+            "speed": {
+                "walk": 20,
+                "swim": 20
+            },
+            "strength": 15,
+            "dexterity": 10,
+            "constitution": 13,
+            "intelligence": 2,
+            "wisdom": 10,
+            "charisma": 5,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {
+                "stealth": 2
+            },
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 10",
+            "languages": "",
+            "challenge_rating": "1/2",
+            "cr": 0.5,
+            "actions": [
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 7 (1d10 + 2) piercing damage, and the target is grappled (escape DC 12). Until this grapple ends, the target is restrained, and the crocodile can't bite another target.",
+                    "attack_bonus": 4,
+                    "damage_dice": "1d10",
+                    "damage_bonus": 2
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Hold Breath",
+                    "desc": "The crocodile can hold its breath for 15 minutes."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 370,
+            "environments": [
+                "Urban",
+                "Swamp",
+                "Water"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "giant-goat",
+            "desc": "",
+            "name": "Giant Goat",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 11,
+            "armor_desc": "natural armor",
+            "hit_points": 19,
+            "hit_dice": "3d10+3",
+            "speed": {
+                "walk": 40
+            },
+            "strength": 17,
+            "dexterity": 11,
+            "constitution": 12,
+            "intelligence": 3,
+            "wisdom": 12,
+            "charisma": 6,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 11",
+            "languages": "",
+            "challenge_rating": "1/2",
+            "cr": 0.5,
+            "actions": [
+                {
+                    "name": "Ram",
+                    "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) bludgeoning damage.",
+                    "attack_bonus": 5,
+                    "damage_dice": "2d4",
+                    "damage_bonus": 3
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Charge",
+                    "desc": "If the goat moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 5 (2d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
+                    "attack_bonus": 0,
+                    "damage_dice": "2d4"
+                },
+                {
+                    "name": "Sure-Footed",
+                    "desc": "The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 376,
+            "environments": [
+                "Hill",
+                "Hills",
+                "Grassland",
+                "Mountains",
+                "Mountain"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "giant-sea-horse",
+            "desc": "Like their smaller kin, **giant sea horses** are shy, colorful fish with elongated bodies and curled tails. Aquatic elves train them as mounts.",
+            "name": "Giant Sea Horse",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 13,
+            "armor_desc": "natural armor",
+            "hit_points": 16,
+            "hit_dice": "3d10",
+            "speed": {
+                "walk": 0,
+                "swim": 40
+            },
+            "strength": 12,
+            "dexterity": 15,
+            "constitution": 11,
+            "intelligence": 2,
+            "wisdom": 12,
+            "charisma": 5,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 11",
+            "languages": "",
+            "challenge_rating": "1/2",
+            "cr": 0.5,
+            "actions": [
+                {
+                    "name": "Ram",
+                    "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.",
+                    "attack_bonus": 3,
+                    "damage_dice": "1d6",
+                    "damage_bonus": 1
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Charge",
+                    "desc": "If the sea horse moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) bludgeoning damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.",
+                    "attack_bonus": 0,
+                    "damage_dice": "2d6"
+                },
+                {
+                    "name": "Water Breathing",
+                    "desc": "The sea horse can breathe only underwater."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 378,
+            "environments": [
+                "Underwater"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "giant-wasp",
+            "desc": "",
+            "name": "Giant Wasp",
+            "size": "Medium",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 12,
+            "armor_desc": null,
+            "hit_points": 13,
+            "hit_dice": "3d8",
+            "speed": {
+                "walk": 10,
+                "fly": 50
+            },
+            "strength": 10,
+            "dexterity": 14,
+            "constitution": 10,
+            "intelligence": 1,
+            "wisdom": 10,
+            "charisma": 3,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 10",
+            "languages": "",
+            "challenge_rating": "1/2",
+            "cr": 0.5,
+            "actions": [
+                {
+                    "name": "Sting",
+                    "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
+                    "attack_bonus": 4,
+                    "damage_dice": "1d6",
+                    "damage_bonus": 2
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": null,
+            "spell_list": [],
+            "page_no": 380,
+            "environments": [
+                "Urban",
+                "Jungle",
+                "Hills",
+                "Grassland",
+                "Forest"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "reef-shark",
+            "desc": "Smaller than giant sharks and hunter sharks, **reef sharks** inhabit shallow waters and coral reefs, gathering in small packs to hunt. A full-grown specimen measures 6 to 10 feet long.",
+            "name": "Reef Shark",
+            "size": "Medium",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 12,
+            "armor_desc": "natural armor",
+            "hit_points": 22,
+            "hit_dice": "4d8+1",
+            "speed": {
+                "swim": 40
+            },
+            "strength": 14,
+            "dexterity": 13,
+            "constitution": 13,
+            "intelligence": 1,
+            "wisdom": 10,
+            "charisma": 4,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": 2,
+            "skills": {
+                "perception": 2
+            },
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "blindsight 30 ft., passive Perception 12",
+            "languages": "",
+            "challenge_rating": "1/2",
+            "cr": 0.5,
+            "actions": [
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
+                    "attack_bonus": 4,
+                    "damage_dice": "1d8",
+                    "damage_bonus": 2
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Pack Tactics",
+                    "desc": "The shark has advantage on an attack roll against a creature if at least one of the shark's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+                },
+                {
+                    "name": "Water Breathing",
+                    "desc": "The shark can breathe only underwater."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 387,
+            "environments": [
+                "Underwater",
+                "Water"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "swarm-of-beetles",
+            "desc": "",
+            "name": "Swarm of Beetles",
+            "size": "Medium",
+            "type": "Beast",
+            "subtype": "Swarm",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 12,
+            "armor_desc": "natural armor",
+            "hit_points": 22,
+            "hit_dice": "5d8",
+            "speed": {
+                "walk": 20,
+                "burrow": 5,
+                "climb": 20
+            },
+            "strength": 3,
+            "dexterity": 13,
+            "constitution": 10,
+            "intelligence": 1,
+            "wisdom": 7,
+            "charisma": 1,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "bludgeoning, piercing, slashing",
+            "damage_immunities": "",
+            "condition_immunities": "charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
+            "senses": "blindsight 10 ft., passive Perception 8",
+            "languages": "",
+            "challenge_rating": "1/2",
+            "cr": 0.5,
+            "actions": [
+                {
+                    "name": "Bites",
+                    "desc": "Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.",
+                    "attack_bonus": 3,
+                    "damage_dice": "4d4"
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Swarm",
+                    "desc": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 391,
+            "environments": [
+                "Desert",
+                "Caves",
+                "Underdark"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "swarm-of-centipedes",
+            "desc": "",
+            "name": "Swarm of Centipedes",
+            "size": "Medium",
+            "type": "Beast",
+            "subtype": "Swarm",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 12,
+            "armor_desc": "natural armor",
+            "hit_points": 22,
+            "hit_dice": "5d8",
+            "speed": {
+                "walk": 20,
+                "climb": 20
+            },
+            "strength": 3,
+            "dexterity": 13,
+            "constitution": 10,
+            "intelligence": 1,
+            "wisdom": 7,
+            "charisma": 1,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "bludgeoning, piercing, slashing",
+            "damage_immunities": "",
+            "condition_immunities": "charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
+            "senses": "blindsight 10 ft., passive Perception 8",
+            "languages": "",
+            "challenge_rating": "1/2",
+            "cr": 0.5,
+            "actions": [
+                {
+                    "name": "Bites",
+                    "desc": "Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.\nA creature reduced to 0 hit points by a swarm of centipedes is stable but poisoned for 1 hour, even after regaining hit points, and paralyzed while poisoned in this way.",
+                    "attack_bonus": 3,
+                    "damage_dice": "4d4"
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Swarm",
+                    "desc": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 391,
+            "environments": [
+                "Ruins",
+                "Caves",
+                "Underdark",
+                "Forest",
+                "Any"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "swarm-of-insects",
+            "desc": "",
+            "name": "Swarm of Insects",
+            "size": "Medium",
+            "type": "Beast",
+            "subtype": "Swarm",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 12,
+            "armor_desc": "natural armor",
+            "hit_points": 22,
+            "hit_dice": "5d8",
+            "speed": {
+                "walk": 20,
+                "climb": 20
+            },
+            "strength": 3,
+            "dexterity": 13,
+            "constitution": 10,
+            "intelligence": 1,
+            "wisdom": 7,
+            "charisma": 1,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "bludgeoning, piercing, slashing",
+            "damage_immunities": "",
+            "condition_immunities": "charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
+            "senses": "blindsight 10 ft., passive Perception 8",
+            "languages": "",
+            "challenge_rating": "1/2",
+            "cr": 0.5,
+            "actions": [
+                {
+                    "name": "Bites",
+                    "desc": "Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.",
+                    "attack_bonus": 3,
+                    "damage_dice": "4d4"
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Swarm",
+                    "desc": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 389,
+            "environments": [
+                "Hill",
+                "Underdark",
+                "Urban",
+                "Grassland",
+                "Forest",
+                "Swamp",
+                "Jungle"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "swarm-of-spiders",
+            "desc": "",
+            "name": "Swarm of Spiders",
+            "size": "Medium",
+            "type": "Beast",
+            "subtype": "Swarm",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 12,
+            "armor_desc": "natural armor",
+            "hit_points": 22,
+            "hit_dice": "5d8",
+            "speed": {
+                "walk": 20,
+                "climb": 20
+            },
+            "strength": 3,
+            "dexterity": 13,
+            "constitution": 10,
+            "intelligence": 1,
+            "wisdom": 7,
+            "charisma": 1,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "bludgeoning, piercing, slashing",
+            "damage_immunities": "",
+            "condition_immunities": "charmed, frightened, paralyzed, petrified, prone, restrained, stunned",
+            "senses": "blindsight 10 ft., passive Perception 8",
+            "languages": "",
+            "challenge_rating": "1/2",
+            "cr": 0.5,
+            "actions": [
+                {
+                    "name": "Bites",
+                    "desc": "Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.",
+                    "attack_bonus": 3,
+                    "damage_dice": "4d4"
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Swarm",
+                    "desc": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points."
+                },
+                {
+                    "name": "Spider Climb",
+                    "desc": "The swarm can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+                },
+                {
+                    "name": "Web Sense",
+                    "desc": "While in contact with a web, the swarm knows the exact location of any other creature in contact with the same web."
+                },
+                {
+                    "name": "Web Walker",
+                    "desc": "The swarm ignores movement restrictions caused by webbing."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 391,
+            "environments": [
+                "Ruins",
+                "Caves",
+                "Underdark",
+                "Forest",
+                "Any"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "swarm-of-wasps",
+            "desc": "",
+            "name": "Swarm of Wasps",
+            "size": "Medium",
+            "type": "Beast",
+            "subtype": "Swarm",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 12,
+            "armor_desc": "natural armor",
+            "hit_points": 22,
+            "hit_dice": "5d8",
+            "speed": {
+                "walk": 5,
+                "fly": 30
+            },
+            "strength": 3,
+            "dexterity": 13,
+            "constitution": 10,
+            "intelligence": 1,
+            "wisdom": 7,
+            "charisma": 1,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "bludgeoning, piercing, slashing",
+            "damage_immunities": "",
+            "condition_immunities": "charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
+            "senses": "blindsight 10 ft., passive Perception 8",
+            "languages": "",
+            "challenge_rating": "1/2",
+            "cr": 0.5,
+            "actions": [
+                {
+                    "name": "Bites",
+                    "desc": "Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.",
+                    "attack_bonus": 3,
+                    "damage_dice": "4d4"
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Swarm",
+                    "desc": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 391,
+            "environments": [
+                "Any",
+                "Forest"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "warhorse",
+            "desc": "",
+            "name": "Warhorse",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 11,
+            "armor_desc": null,
+            "hit_points": 19,
+            "hit_dice": "3d10+3",
+            "speed": {
+                "walk": 60
+            },
+            "strength": 18,
+            "dexterity": 12,
+            "constitution": 13,
+            "intelligence": 2,
+            "wisdom": 12,
+            "charisma": 7,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 11",
+            "languages": "",
+            "challenge_rating": "1/2",
+            "cr": 0.5,
+            "actions": [
+                {
+                    "name": "Hooves",
+                    "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.",
+                    "attack_bonus": 6,
+                    "damage_dice": "2d6",
+                    "damage_bonus": 4
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Trampling Charge",
+                    "desc": "If the horse moves at least 20 ft. straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the horse can make another attack with its hooves against it as a bonus action."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 392,
+            "environments": [
+                "Urban",
+                "Settlement"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "axe-beak",
+            "desc": "An **axe beak** is a tall flightless bird with strong legs and a heavy, wedge-shaped beak. It has a nasty disposition and tends to attack any unfamiliar creature that wanders too close.",
+            "name": "Axe Beak",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 11,
+            "armor_desc": null,
+            "hit_points": 19,
+            "hit_dice": "3d10+3",
+            "speed": {
+                "walk": 50
+            },
+            "strength": 14,
+            "dexterity": 12,
+            "constitution": 12,
+            "intelligence": 2,
+            "wisdom": 10,
+            "charisma": 5,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 10",
+            "languages": "",
+            "challenge_rating": "1/4",
+            "cr": 0.25,
+            "actions": [
+                {
+                    "name": "Beak",
+                    "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage.",
+                    "attack_bonus": 4,
+                    "damage_dice": "1d8",
+                    "damage_bonus": 2
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": null,
+            "spell_list": [],
+            "page_no": 366,
+            "environments": [
+                "Hill",
+                "Jungle",
+                "Swamp",
+                "Grassland",
+                "Forest"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "boar",
+            "desc": "",
+            "name": "Boar",
+            "size": "Medium",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 11,
+            "armor_desc": "natural armor",
+            "hit_points": 11,
+            "hit_dice": "2d8+2",
+            "speed": {
+                "walk": 40
+            },
+            "strength": 13,
+            "dexterity": 11,
+            "constitution": 12,
+            "intelligence": 2,
+            "wisdom": 9,
+            "charisma": 5,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 9",
+            "languages": "",
+            "challenge_rating": "1/4",
+            "cr": 0.25,
+            "actions": [
+                {
+                    "name": "Tusk",
+                    "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage.",
+                    "attack_bonus": 3,
+                    "damage_dice": "1d6",
+                    "damage_bonus": 1
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Charge",
+                    "desc": "If the boar moves at least 20 ft. straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 3 (1d6) slashing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.",
+                    "attack_bonus": 0,
+                    "damage_dice": "1d6"
+                },
+                {
+                    "name": "Relentless (Recharges after a Short or Long Rest)",
+                    "desc": "If the boar takes 7 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 368,
+            "environments": [
+                "Hill",
+                "Forest",
+                "Grassland"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "constrictor-snake",
+            "desc": "",
+            "name": "Constrictor Snake",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 12,
+            "armor_desc": null,
+            "hit_points": 13,
+            "hit_dice": "2d10+2",
+            "speed": {
+                "walk": 30,
+                "swim": 30
+            },
+            "strength": 15,
+            "dexterity": 14,
+            "constitution": 12,
+            "intelligence": 1,
+            "wisdom": 10,
+            "charisma": 3,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "blindsight 10 ft., passive Perception 10",
+            "languages": "",
+            "challenge_rating": "1/4",
+            "cr": 0.25,
+            "actions": [
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage.",
+                    "attack_bonus": 4,
+                    "damage_dice": "1d6",
+                    "damage_bonus": 2
+                },
+                {
+                    "name": "Constrict",
+                    "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 6 (1d8 + 2) bludgeoning damage, and the target is grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the snake can't constrict another target.",
+                    "attack_bonus": 4,
+                    "damage_dice": "1d8",
+                    "damage_bonus": 2
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": null,
+            "spell_list": [],
+            "page_no": 369,
+            "environments": [
+                "Underwater",
+                "Swamp",
+                "Jungle",
+                "Forest"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "draft-horse",
+            "desc": "",
+            "name": "Draft Horse",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 10,
+            "armor_desc": null,
+            "hit_points": 19,
+            "hit_dice": "3d10+3",
+            "speed": {
+                "walk": 40
+            },
+            "strength": 18,
+            "dexterity": 10,
+            "constitution": 12,
+            "intelligence": 2,
+            "wisdom": 11,
+            "charisma": 7,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 10",
+            "languages": "",
+            "challenge_rating": "1/4",
+            "cr": 0.25,
+            "actions": [
+                {
+                    "name": "Hooves",
+                    "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) bludgeoning damage.",
+                    "attack_bonus": 6,
+                    "damage_dice": "2d4",
+                    "damage_bonus": 4
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": null,
+            "spell_list": [],
+            "page_no": 371,
+            "environments": [
+                "Urban",
+                "Settlement"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "elk",
+            "desc": "",
+            "name": "Elk",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 10,
+            "armor_desc": null,
+            "hit_points": 13,
+            "hit_dice": "2d10+2",
+            "speed": {
+                "walk": 50
+            },
+            "strength": 16,
+            "dexterity": 10,
+            "constitution": 12,
+            "intelligence": 2,
+            "wisdom": 10,
+            "charisma": 6,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 10",
+            "languages": "",
+            "challenge_rating": "1/4",
+            "cr": 0.25,
+            "actions": [
+                {
+                    "name": "Ram",
+                    "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage."
+                },
+                {
+                    "name": "Hooves",
+                    "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one prone creature. Hit: 8 (2d4 + 3) bludgeoning damage."
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Charge",
+                    "desc": "If the elk moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
+                    "attack_bonus": 0,
+                    "damage_dice": "2d6"
+                }
+            ],
+            "spell_list": [],
+            "page_no": 372,
+            "environments": [
+                "Hill",
+                "Grassland",
+                "Tundra",
+                "Forest"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "giant-badger",
+            "desc": "",
+            "name": "Giant Badger",
+            "size": "Medium",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 10,
+            "armor_desc": null,
+            "hit_points": 13,
+            "hit_dice": "2d8+4",
+            "speed": {
+                "walk": 30,
+                "burrow": 10
+            },
+            "strength": 13,
+            "dexterity": 10,
+            "constitution": 15,
+            "intelligence": 2,
+            "wisdom": 12,
+            "charisma": 5,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "darkvision 30 ft., passive Perception 11",
+            "languages": "",
+            "challenge_rating": "1/4",
+            "cr": 0.25,
+            "actions": [
+                {
+                    "name": "Multiattack",
+                    "desc": "The badger makes two attacks: one with its bite and one with its claws."
+                },
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage.",
+                    "attack_bonus": 3,
+                    "damage_dice": "1d6",
+                    "damage_bonus": 1
+                },
+                {
+                    "name": "Claws",
+                    "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) slashing damage.",
+                    "attack_bonus": 3,
+                    "damage_dice": "2d4",
+                    "damage_bonus": 1
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Keen Smell",
+                    "desc": "The badger has advantage on Wisdom (Perception) checks that rely on smell."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 373,
+            "environments": [
+                "Forest",
+                "Grassland"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "giant-bat",
+            "desc": "",
+            "name": "Giant Bat",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 13,
+            "armor_desc": null,
+            "hit_points": 22,
+            "hit_dice": "4d10",
+            "speed": {
+                "walk": 10,
+                "fly": 60
+            },
+            "strength": 15,
+            "dexterity": 16,
+            "constitution": 11,
+            "intelligence": 2,
+            "wisdom": 12,
+            "charisma": 6,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "blindsight 60 ft., passive Perception 11",
+            "languages": "",
+            "challenge_rating": "1/4",
+            "cr": 0.25,
+            "actions": [
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage.",
+                    "attack_bonus": 4,
+                    "damage_dice": "1d6",
+                    "damage_bonus": 2
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Echolocation",
+                    "desc": "The bat can't use its blindsight while deafened."
+                },
+                {
+                    "name": "Keen Hearing",
+                    "desc": "The bat has advantage on Wisdom (Perception) checks that rely on hearing."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 373,
+            "environments": [
+                "Underdark",
+                "Forest",
+                "Caverns"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "giant-centipede",
+            "desc": "",
+            "name": "Giant Centipede",
+            "size": "Small",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 13,
+            "armor_desc": "natural armor",
+            "hit_points": 4,
+            "hit_dice": "1d6+1",
+            "speed": {
+                "walk": 30,
+                "climb": 30
+            },
+            "strength": 5,
+            "dexterity": 14,
+            "constitution": 12,
+            "intelligence": 1,
+            "wisdom": 7,
+            "charisma": 3,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "blindsight 30 ft., passive Perception 8",
+            "languages": "",
+            "challenge_rating": "1/4",
+            "cr": 0.25,
+            "actions": [
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or take 10 (3d6) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
+                    "attack_bonus": 4,
+                    "damage_dice": "1d4",
+                    "damage_bonus": 2
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": null,
+            "spell_list": [],
+            "page_no": 374,
+            "environments": [
+                "Underdark",
+                "Ruin",
+                "Urban",
+                "Caverns"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "giant-frog",
+            "desc": "",
+            "name": "Giant Frog",
+            "size": "Medium",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 11,
+            "armor_desc": null,
+            "hit_points": 18,
+            "hit_dice": "4d8",
+            "speed": {
+                "walk": 30,
+                "swim": 30
+            },
+            "strength": 12,
+            "dexterity": 13,
+            "constitution": 11,
+            "intelligence": 2,
+            "wisdom": 10,
+            "charisma": 3,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": 2,
+            "skills": {
+                "perception": 2,
+                "stealth": 3
+            },
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "darkvision 30 ft., passive Perception 12",
+            "languages": "",
+            "challenge_rating": "1/4",
+            "cr": 0.25,
+            "actions": [
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage, and the target is grappled (escape DC 11). Until this grapple ends, the target is restrained, and the frog can't bite another target.",
+                    "attack_bonus": 3,
+                    "damage_dice": "1d6",
+                    "damage_bonus": 1
+                },
+                {
+                    "name": "Swallow",
+                    "desc": "The frog makes one bite attack against a Small or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the frog, and it takes 5 (2d4) acid damage at the start of each of the frog's turns. The frog can have only one target swallowed at a time. If the frog dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 ft. of movement, exiting prone."
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Amphibious",
+                    "desc": "The frog can breathe air and water"
+                },
+                {
+                    "name": "Standing Leap",
+                    "desc": "The frog's long jump is up to 20 ft. and its high jump is up to 10 ft., with or without a running start."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 376,
+            "environments": [
+                "Swamp",
+                "Jungle",
+                "Water",
+                "Forest"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "giant-lizard",
+            "desc": "A **giant lizard** can be ridden or used as a draft animal. Lizardfolk also keep them as pets, and subterranean giant lizards are used as mounts and pack animals by drow, duergar, and others.",
+            "name": "Giant Lizard",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 12,
+            "armor_desc": "natural armor",
+            "hit_points": 19,
+            "hit_dice": "3d10+3",
+            "speed": {
+                "walk": 30,
+                "climb": 30
+            },
+            "strength": 15,
+            "dexterity": 12,
+            "constitution": 13,
+            "intelligence": 2,
+            "wisdom": 10,
+            "charisma": 5,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "darkvision 30 ft., passive Perception 10",
+            "languages": "",
+            "challenge_rating": "1/4",
+            "cr": 0.25,
+            "actions": [
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
+                    "attack_bonus": 4,
+                    "damage_dice": "1d8",
+                    "damage_bonus": 2
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Variant: Hold Breath",
+                    "desc": "The lizard can hold its breath for 15 minutes. (A lizard that has this trait also has a swimming speed of 30 feet.)"
+                },
+                {
+                    "name": "Variant: Spider Climb",
+                    "desc": "The lizard can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 377,
+            "environments": [
+                "Underdark",
+                "Desert",
+                "Coastal",
+                "Grassland",
+                "Forest",
+                "Ruin",
+                "Swamp",
+                "Jungle"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "giant-owl",
+            "desc": "**Giant owls** often befriend fey and other sylvan creatures and are guardians of their woodland realms.",
+            "name": "Giant Owl",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "neutral",
+            "armor_class": 12,
+            "armor_desc": null,
+            "hit_points": 19,
+            "hit_dice": "3d10+3",
+            "speed": {
+                "walk": 5,
+                "fly": 60
+            },
+            "strength": 13,
+            "dexterity": 15,
+            "constitution": 12,
+            "intelligence": 8,
+            "wisdom": 13,
+            "charisma": 10,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": 5,
+            "skills": {
+                "perception": 5,
+                "stealth": 4
+            },
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "darkvision 120 ft., passive Perception 15",
+            "languages": "Giant Owl, understands Common, Elvish, and Sylvan but can't speak",
+            "challenge_rating": "1/4",
+            "cr": 0.25,
+            "actions": [
+                {
+                    "name": "Talons",
+                    "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 8 (2d6 + 1) slashing damage.",
+                    "attack_bonus": 3,
+                    "damage_dice": "2d6",
+                    "damage_bonus": 1
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Flyby",
+                    "desc": "The owl doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+                },
+                {
+                    "name": "Keen Hearing and Sight",
+                    "desc": "The owl has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 377,
+            "environments": [
+                "Hill",
+                "Feywild",
+                "Forest",
+                "Arctic"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "giant-poisonous-snake",
+            "desc": "",
+            "name": "Giant Poisonous Snake",
+            "size": "Medium",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 14,
+            "armor_desc": null,
+            "hit_points": 11,
+            "hit_dice": "2d8+2",
+            "speed": {
+                "walk": 30,
+                "swim": 30
+            },
+            "strength": 10,
+            "dexterity": 18,
+            "constitution": 13,
+            "intelligence": 2,
+            "wisdom": 10,
+            "charisma": 3,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": 2,
+            "skills": {
+                "perception": 2
+            },
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "blindsight 10 ft., passive Perception 12",
+            "languages": "",
+            "challenge_rating": "1/4",
+            "cr": 0.25,
+            "actions": [
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 6 (1d4 + 4) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.",
+                    "attack_bonus": 6,
+                    "damage_dice": "1d4",
+                    "damage_bonus": 4
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": null,
+            "spell_list": [],
+            "page_no": 378,
+            "environments": [
+                "Underdark",
+                "Desert",
+                "Mountains",
+                "Grassland",
+                "Ruin",
+                "Swamp",
+                "Water",
+                "Urban",
+                "Sewer",
+                "Forest",
+                "Tomb",
+                "Jungle",
+                "Hills",
+                "Caverns"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "giant-wolf-spider",
+            "desc": "Smaller than a giant spider, a **giant wolf spider** hunts prey across open ground or hides in a burrow or crevice, or in a hidden cavity beneath debris.",
+            "name": "Giant Wolf Spider",
+            "size": "Medium",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 13,
+            "armor_desc": null,
+            "hit_points": 11,
+            "hit_dice": "2d8+2",
+            "speed": {
+                "walk": 40,
+                "climb": 40
+            },
+            "strength": 12,
+            "dexterity": 16,
+            "constitution": 13,
+            "intelligence": 3,
+            "wisdom": 12,
+            "charisma": 4,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": 3,
+            "skills": {
+                "perception": 3,
+                "stealth": 7
+            },
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "blindsight 10 ft., darkvision 60 ft., passive Perception 13",
+            "languages": "",
+            "challenge_rating": "1/4",
+            "cr": 0.25,
+            "actions": [
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 4 (1d6 + 1) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 7 (2d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
+                    "attack_bonus": 3,
+                    "damage_dice": "1d6",
+                    "damage_bonus": 1
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Spider Climb",
+                    "desc": "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+                },
+                {
+                    "name": "Web Sense",
+                    "desc": "While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+                },
+                {
+                    "name": "Web Walker",
+                    "desc": "The spider ignores movement restrictions caused by webbing."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 381,
+            "environments": [
+                "Hill",
+                "Desert",
+                "Grassland",
+                "Coastal",
+                "Forest",
+                "Ruin",
+                "Feywild"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "panther",
+            "desc": "",
+            "name": "Panther",
+            "size": "Medium",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 12,
+            "armor_desc": null,
+            "hit_points": 13,
+            "hit_dice": "3d8",
+            "speed": {
+                "walk": 50,
+                "climb": 40
+            },
+            "strength": 14,
+            "dexterity": 15,
+            "constitution": 10,
+            "intelligence": 3,
+            "wisdom": 14,
+            "charisma": 7,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": 4,
+            "skills": {
+                "perception": 4,
+                "stealth": 6
+            },
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 14",
+            "languages": "",
+            "challenge_rating": "1/4",
+            "cr": 0.25,
+            "actions": [
+                {
+                    "name": "Bite",
+                    "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+                    "attack_bonus": 4,
+                    "damage_dice": "1d6",
+                    "damage_bonus": 2
+                },
+                {
+                    "name": "Claw",
+                    "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.",
+                    "attack_bonus": 4,
+                    "damage_dice": "1d4",
+                    "damage_bonus": 2
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Keen Smell",
+                    "desc": "The panther has advantage on Wisdom (Perception) checks that rely on smell."
+                },
+                {
+                    "name": "Pounce",
+                    "desc": "If the panther moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the panther can make one bite attack against it as a bonus action."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 385,
+            "environments": [
+                "Hill",
+                "Jungle",
+                "Grassland",
+                "Forest"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "riding-horse",
+            "desc": "",
+            "name": "Riding Horse",
+            "size": "Large",
+            "type": "Beast",
+            "subtype": "",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 10,
+            "armor_desc": null,
+            "hit_points": 13,
+            "hit_dice": "2d10+2",
+            "speed": {
+                "walk": 60
+            },
+            "strength": 16,
+            "dexterity": 10,
+            "constitution": 12,
+            "intelligence": 2,
+            "wisdom": 11,
+            "charisma": 7,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "",
+            "damage_immunities": "",
+            "condition_immunities": "",
+            "senses": "passive Perception 10",
+            "languages": "",
+            "challenge_rating": "1/4",
+            "cr": 0.25,
+            "actions": [
+                {
+                    "name": "Hooves",
+                    "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) bludgeoning damage.",
+                    "attack_bonus": 5,
+                    "damage_dice": "2d4",
+                    "damage_bonus": 3
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": null,
+            "spell_list": [],
+            "page_no": 388,
+            "environments": [
+                "Urban",
+                "Settlement",
+                "Grassland"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "swarm-of-bats",
+            "desc": "",
+            "name": "Swarm of Bats",
+            "size": "Medium",
+            "type": "Beast",
+            "subtype": "Swarm",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 12,
+            "armor_desc": null,
+            "hit_points": 22,
+            "hit_dice": "5d8",
+            "speed": {
+                "walk": 0,
+                "fly": 30
+            },
+            "strength": 5,
+            "dexterity": 15,
+            "constitution": 10,
+            "intelligence": 2,
+            "wisdom": 12,
+            "charisma": 4,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "bludgeoning, piercing, slashing",
+            "damage_immunities": "",
+            "condition_immunities": "charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
+            "senses": "blindsight 60 ft., passive Perception 11",
+            "languages": "",
+            "challenge_rating": "1/4",
+            "cr": 0.25,
+            "actions": [
+                {
+                    "name": "Bites",
+                    "desc": "Melee Weapon Attack: +4 to hit, reach 0 ft., one creature in the swarm's space. Hit: 5 (2d4) piercing damage, or 2 (1d4) piercing damage if the swarm has half of its hit points or fewer.",
+                    "attack_bonus": 4,
+                    "damage_dice": "2d4"
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Echolocation",
+                    "desc": "The swarm can't use its blindsight while deafened."
+                },
+                {
+                    "name": "Keen Hearing",
+                    "desc": "The swarm has advantage on Wisdom (Perception) checks that rely on hearing."
+                },
+                {
+                    "name": "Swarm",
+                    "desc": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny bat. The swarm can't regain hit points or gain temporary hit points."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 389,
+            "environments": [
+                "Hill",
+                "Underdark",
+                "Urban",
+                "Mountains",
+                "Tomb",
+                "Jungle",
+                "Shadowfell",
+                "Mountain",
+                "Caverns"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        },
+        {
+            "slug": "swarm-of-rats",
+            "desc": "",
+            "name": "Swarm of Rats",
+            "size": "Medium",
+            "type": "Beast",
+            "subtype": "Swarm",
+            "group": "Miscellaneous Creatures",
+            "alignment": "unaligned",
+            "armor_class": 10,
+            "armor_desc": null,
+            "hit_points": 24,
+            "hit_dice": "7d8-7",
+            "speed": {
+                "walk": 30
+            },
+            "strength": 9,
+            "dexterity": 11,
+            "constitution": 9,
+            "intelligence": 2,
+            "wisdom": 10,
+            "charisma": 3,
+            "strength_save": null,
+            "dexterity_save": null,
+            "constitution_save": null,
+            "intelligence_save": null,
+            "wisdom_save": null,
+            "charisma_save": null,
+            "perception": null,
+            "skills": {},
+            "damage_vulnerabilities": "",
+            "damage_resistances": "bludgeoning, piercing, slashing",
+            "damage_immunities": "",
+            "condition_immunities": "charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
+            "senses": "darkvision 30 ft., passive Perception 10",
+            "languages": "",
+            "challenge_rating": "1/4",
+            "cr": 0.25,
+            "actions": [
+                {
+                    "name": "Bites",
+                    "desc": "Melee Weapon Attack: +2 to hit, reach 0 ft., one target in the swarm's space. Hit: 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer.",
+                    "attack_bonus": 2,
+                    "damage_dice": "2d6"
+                }
+            ],
+            "bonus_actions": null,
+            "reactions": null,
+            "legendary_desc": "",
+            "legendary_actions": null,
+            "special_abilities": [
+                {
+                    "name": "Keen Smell",
+                    "desc": "The swarm has advantage on Wisdom (Perception) checks that rely on smell."
+                },
+                {
+                    "name": "Swarm",
+                    "desc": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny rat. The swarm can't regain hit points or gain temporary hit points."
+                }
+            ],
+            "spell_list": [],
+            "page_no": 390,
+            "environments": [
+                "Urban",
+                "Sewer",
+                "Forest",
+                "Ruin",
+                "Swamp",
+                "Caverns",
+                "Settlement"
+            ],
+            "img_main": null,
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__license_url": "http://open5e.com/legal",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+        }
+    ]
+}
