@@ -1,3 +1,4 @@
+"use client"
 import { useState, useEffect } from "react";
 import { Toast } from "react-bootstrap";
 import LogRoll from "./log"
@@ -6,6 +7,8 @@ import { roll } from "./die";
 import MyMonster from "./MyMonster";
 import monsters from "./Monsters.json";
 import HomebrewMonsters from "./HomebrewMonsters.json";
+import 'bootstrap/dist/js/bootstrap';
+
 
 export default function Monsters() {
     const [filteredMonsters, setFilteredMonsters] = useState([])
