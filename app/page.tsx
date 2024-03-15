@@ -9,9 +9,9 @@ import monsters from "./Monsters.json";
 import HomebrewMonsters from "./HomebrewMonsters.json";
 
 export default function Monsters() {
-    const [filteredMonsters, setFilteredMonsters] = useState([])
-    const [myMonsters, setMyMonsters] = useState([]);
-    const [diceLog, setDiceLog] = useState([]);
+    const [filteredMonsters, setFilteredMonsters] = useState<any>([]);
+    const [myMonsters, setMyMonsters] = useState<any>([]);
+    const [diceLog, setDiceLog] = useState<LogRoll[]>([]);
     const [showLog, setShowLog] = useState("inherit");
     const [search, setSearch] = useState("");
     const [CRfilter, SetCRfilter] = useState("0-2");
@@ -36,7 +36,7 @@ export default function Monsters() {
             { diceLog.length>0 ?
                 <div style={{position:"fixed", bottom:"10px", right:"10px", zIndex:"1"}}>
                     <div style={{display:showLog}}>
-                        {diceLog.map((msg, index) => (
+                        {diceLog.map((msg: LogRoll, index) => (
                             <Toast key={index} onClose={() => setDiceLog(diceLog.filter((item, i) => i !== index))}>
                                 <Toast.Header>
                                     <div className="me-auto">
@@ -51,12 +51,12 @@ export default function Monsters() {
                 </div> : <></>}
             <h1>Straight Roll</h1>
             <input type="text" className="form-control" onKeyDown={(e) => {
-                if(e.key === "Enter"){setDiceLog([...diceLog, new LogRoll("manual", "", e.target.value, roll(e.target.value))])}}}></input>
+                if(e.key === "Enter"){setDiceLog([...diceLog, new LogRoll("manual", "", (e.target as HTMLInputElement).value)])}}}></input>
             <h1>My Monsters</h1>
-            {myMonsters.map((myMonster, index) => (
+            {myMonsters.map((myMonster: any, index: number) => (
                 <MyMonster key={index} monster={myMonster} 
-                    onRoll={(type, dice) => setDiceLog([...diceLog, new LogRoll(myMonster.name+index, type, dice)])}
-                    onDelete={() => setMyMonsters(myMonsters.filter((item, i) => i !== index))} />
+                    onRoll={(type: string, dice: string) => setDiceLog([...diceLog, new LogRoll(myMonster.name+index, type, dice)])}
+                    onDelete={() => setMyMonsters(myMonsters.filter((item: any, i: number) => i !== index))} />
                 //<MyMonster key={index} uri="/api/monsters/giant-boar" />
             ))}
             <h1>All Monsters</h1>
@@ -72,7 +72,7 @@ export default function Monsters() {
             </div>
 
             <div className="row">
-            {filteredMonsters.map((monster, index) => (
+            {filteredMonsters.map((monster: any, index: number) => (
                 <Card key={index} monster={monster} onAdd={() => setMyMonsters([...myMonsters, monster])} index={index} />
             ))}
             </div>
