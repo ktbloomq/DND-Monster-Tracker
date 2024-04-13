@@ -13,8 +13,9 @@ module.exports = {
       colors: {
         "primary": "var(--primary)",
         "danger": "var(--danger)",
-        "canvas": "var(--canvas)",
-        "text": "var(--text)",
+        "body": "var(--body)",
+        "secondary": "var(--secondary)",
+        "tertiary": "var(--tertiary)",
         "light": "var(--light)",
         "dark": "var(--dark)"
       }

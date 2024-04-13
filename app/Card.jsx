@@ -2,7 +2,7 @@
 export default function Card({ monster, onAdd, index }) {
     return (
       <div className="2xl:w-1/4 xl:w-1/3 md:w-1/2 w-full p-1">
-        <div className="border rounded">
+        <div className="border border-secondary rounded">
           <div className="flex align-items-center peer">
             <input id={"monster-"+index} type="radio" name="new monster" value={JSON.stringify(monster)}/>
             <label htmlFor={"monster-"+index} className="text-lg font-bold self-center me-1">{monster.name}</label>

@@ -39,7 +39,7 @@ export default function Monsters() {
                             <LogDisplay logEntry={msg} onClose={() => setDiceLog(diceLog.filter((item, i) => i !== index))}/>
                         ))}
                     </div>
-                    <button className="bg-canvas p-2 rounded float-end" onClick={toggleLog}>X</button>
+                    <button className="bg-body p-2 rounded float-end" onClick={toggleLog}>X</button>
                 </div> : <></>}
             <h1>Straight Roll</h1>
             <input id='straight-roll' type="text" className="w-full" onKeyDown={(e) => {

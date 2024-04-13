@@ -29,13 +29,13 @@ export default function MyMonster({ monster, onRoll, onDelete }) {
     }
 
     return (
-    <div className="border p-1 m-2">
+    <div className="border border-secondary rounded p-1 m-2">
         {monster ? (
-            <div className="flex">
-                <div className="w-1/2">
+            <div className="flex flex-wrap">
+                <div className="w-full lg:w-1/2">
                     <strong className="text-xl">{monster.name}</strong>
                     <button className="border border-danger rounded text-danger hover:bg-danger hover:text-light ms-1 mb-1 px-0.5" onClick={onDelete}>Delete</button>
-                    <hr />
+                    <hr className="border-secondary" />
                     <div>Armor Class {monster.armor_class}</div>
                     <div>Hit Points {hp}
                         <input type="number" className="ms-2" style={{display:"inline",width:"50%"}}
@@ -48,7 +48,7 @@ export default function MyMonster({ monster, onRoll, onDelete }) {
                         {monster.speed.hover ? <>, hover {monster.speed.hover}</> : <></>}
                         {monster.speed.swim ? <>, swim {monster.speed.swim}</> : <></>}
                     </div>
-                    <hr />
+                    <hr className="border-secondary" />
                     {/* Abilities */}
                     <div className="flex">
                         <a href="#" className="flex-1 text-center" onClick={() => onRoll("STR", `1d20+${modifiers.strength}`)}>
@@ -76,19 +76,20 @@ export default function MyMonster({ monster, onRoll, onDelete }) {
                             <div>{monster.charisma} ({modifiers.charisma})</div>
                         </a>
                     </div>
-                    <hr />
+                    <hr className="border-secondary" />
                     <div>Skills: {Object.keys(monster.skills).map((key, index) => (
                         <span key={index}>{key} +{monster.skills[key]} </span>
                     ))}</div>
                     <div>Senses: {monster.senses}</div>
                 </div>
-                <div className="w-1/2">
+                <div className="w-full lg:w-1/2">
+                    <hr className="border-secondary lg:hidden" />
                     {monster.special_abilities ? monster.special_abilities.map((sa, index) => (
                     <a className="block" href="#" key={index} onClick={() => {if(sa.damage_dice){onRoll(sa.name,`${sa.damage_dice}+${sa.damage_bonus ? sa.damage_bonus : 0}`)}}}>
                         <span className="font-bold">{sa.name}. </span>{sa.desc}</a>
                     )) : null}
-                    <hr />
-                    <h5>Actions</h5>
+                    <hr className="border-secondary" />
+                    <h5 className="text-lg font-bold">Actions</h5>
                     {monster.actions.map((action, index) => (
                         <a href="#" className="block" key={index} onClick={() => {if(action.damage_dice){onRoll(action.name,`${action.damage_dice}+${action.damage_bonus ? action.damage_bonus : 0}`)}}}>
                             <span className="font-bold">{action.name}. </span>{action.desc}
