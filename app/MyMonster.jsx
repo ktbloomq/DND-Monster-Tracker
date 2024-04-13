@@ -31,9 +31,9 @@ export default function MyMonster({ monster, onRoll, onDelete }) {
     return (
     <div className="border p-1 m-2">
         {monster ? (
-            <div className="row">
-                <div className="col">
-                    <strong className="fs-2 mx-2">{monster.name}</strong>
+            <div className="flex">
+                <div className="w-1/2">
+                    <strong className="text-xl">{monster.name}</strong>
                     <button className="btn btn-outline-danger" onClick={onDelete}>Delete</button>
                     <hr />
                     <div>Armor Class {monster.armor_class}</div>
@@ -50,31 +50,31 @@ export default function MyMonster({ monster, onRoll, onDelete }) {
                     </div>
                     <hr />
                     {/* Abilities */}
-                    <div className="row">
-                        <div className="col text-center" onClick={() => onRoll("STR", `1d20+${modifiers.strength}`)}>
+                    <div className="flex">
+                        <a href="#" className="flex-1 text-center" onClick={() => onRoll("STR", `1d20+${modifiers.strength}`)}>
                             <div>STR</div>
                             <div>{monster.strength} ({modifiers.strength})</div>
-                        </div>
-                        <div className="col text-center" onClick={() => onRoll("DEX", `1d20+${modifiers.dexterity}`)}>
+                        </a>
+                        <a href="#" className="flex-1 text-center" onClick={() => onRoll("DEX", `1d20+${modifiers.dexterity}`)}>
                             <div>DEX</div>
                             <div>{monster.dexterity} ({modifiers.dexterity})</div>
-                        </div>
-                        <div className="col text-center" onClick={() => onRoll("CON", `1d20+${modifiers.constitution}`)}>
+                        </a>
+                        <a href="#" className="flex-1 text-center" onClick={() => onRoll("CON", `1d20+${modifiers.constitution}`)}>
                             <div>CON</div>
                             <div>{monster.constitution} ({modifiers.constitution})</div>
-                        </div>
-                        <div className="col text-center" onClick={() => onRoll("INT", `1d20+${modifiers.intelligence}`)}>
+                        </a>
+                        <a href="#" className="flex-1 text-center" onClick={() => onRoll("INT", `1d20+${modifiers.intelligence}`)}>
                             <div>INT</div>
                             <div>{monster.intelligence} ({modifiers.intelligence})</div>
-                        </div>
-                        <div className="col text-center" onClick={() => onRoll("WIS", `1d20+${modifiers.wisdom}`)}>
+                        </a>
+                        <a href="#" className="flex-1 text-center" onClick={() => onRoll("WIS", `1d20+${modifiers.wisdom}`)}>
                             <div>WIS</div>
                             <div>{monster.wisdom} ({modifiers.wisdom})</div>
-                        </div>
-                        <div className="col text-center" onClick={() => onRoll("CHA", `1d20+${modifiers.charisma}`)}>
+                        </a>
+                        <a href="#" className="flex-1 text-center" onClick={() => onRoll("CHA", `1d20+${modifiers.charisma}`)}>
                             <div>CHA</div>
                             <div>{monster.charisma} ({modifiers.charisma})</div>
-                        </div>
+                        </a>
                     </div>
                     <hr />
                     <div>Skills: {Object.keys(monster.skills).map((key, index) => (
@@ -82,17 +82,17 @@ export default function MyMonster({ monster, onRoll, onDelete }) {
                     ))}</div>
                     <div>Senses: {monster.senses}</div>
                 </div>
-                <div className="col">
+                <div className="w-1/2">
                     {monster.special_abilities ? monster.special_abilities.map((sa, index) => (
-                    <div key={index} onClick={() => {if(sa.damage_dice){onRoll(sa.name,`${sa.damage_dice}+${sa.damage_bonus ? sa.damage_bonus : 0}`)}}}>
-                        <span style={{fontWeight:"bold"}}>{sa.name}. </span>{sa.desc}</div>
+                    <a className="block" href="#" key={index} onClick={() => {if(sa.damage_dice){onRoll(sa.name,`${sa.damage_dice}+${sa.damage_bonus ? sa.damage_bonus : 0}`)}}}>
+                        <span className="font-bold">{sa.name}. </span>{sa.desc}</a>
                     )) : null}
                     <hr />
                     <h5>Actions</h5>
                     {monster.actions.map((action, index) => (
-                        <div key={index} onClick={() => {if(action.damage_dice){onRoll(action.name,`${action.damage_dice}+${action.damage_bonus ? action.damage_bonus : 0}`)}}}>
-                            <span style={{fontWeight:"bold"}}>{action.name}. </span>{action.desc}
-                        </div>
+                        <a href="#" className="block" key={index} onClick={() => {if(action.damage_dice){onRoll(action.name,`${action.damage_dice}+${action.damage_bonus ? action.damage_bonus : 0}`)}}}>
+                            <span className="font-bold">{action.name}. </span>{action.desc}
+                        </a>
                     ))}
                 </div>
             </div>

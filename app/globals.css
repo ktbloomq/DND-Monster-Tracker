@@ -5,6 +5,12 @@
 @layer base {
     h1 {
        @apply text-4xl;
-       @apply font-bold
+       @apply font-bold;
+    }
+    input {
+        @apply border-blue-200;
+        @apply border-solid;
+        @apply border;
+        @apply rounded;
     }
 }
