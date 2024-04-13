@@ -1,9 +1,9 @@
 "use client"
+import './globals.css';
 import { useState, useEffect } from "react";
 import { Toast } from "react-bootstrap";
 import LogRoll from "./log"
 import Card from "./Card";
-import { roll } from "./die";
 import MyMonster from "./MyMonster";
 import monsters from "./Monsters.json";
 import HomebrewMonsters from "./HomebrewMonsters.json";
@@ -34,7 +34,7 @@ export default function Monsters() {
         <div  data-bs-theme="dark" className="text-light m-3">
             {/* Dice Log */}
             { diceLog.length>0 ?
-                <div style={{position:"fixed", bottom:"10px", right:"10px", zIndex:"1"}}>
+                <div className='fixed bottom-2 right-2'>
                     <div style={{display:showLog}}>
                         {diceLog.map((msg: LogRoll, index) => (
                             <Toast key={index} onClose={() => setDiceLog(diceLog.filter((item, i) => i !== index))}>
@@ -50,7 +50,7 @@ export default function Monsters() {
                     <button className="btn btn-primary float-end" onClick={toggleLog}>X</button>
                 </div> : <></>}
             <h1>Straight Roll</h1>
-            <input type="text" className="form-control" onKeyDown={(e) => {
+            <input id='straight-roll' type="text" className="form-control focus:bg-red-50" onKeyDown={(e) => {
                 if(e.key === "Enter"){setDiceLog([...diceLog, new LogRoll("manual", "", (e.target as HTMLInputElement).value)])}}}></input>
             <h1>My Monsters</h1>
             {myMonsters.map((myMonster: any, index: number) => (
@@ -61,17 +61,17 @@ export default function Monsters() {
             ))}
             <h1>All Monsters</h1>
             <div className="form-floating mb-3">
-                <input type="text" className="form-control" onChange={(event) => setSearch(event.target.value)} placeholder=""></input>
-                <label>Search Monster</label>
+                <label htmlFor='search-monster'>Search Monster</label>
+                <input id='search-monster' type="text" className="form-control" onChange={(event) => setSearch(event.target.value)} placeholder=""></input>
             </div>
             <div className="form-floating mb-3">
-                <input type="text" className="form-control" id="CRfilter" placeholder="0-2"
+                <label htmlFor='CRfilter'>Challenge Rating (0-2)</label>
+                <input id="CRfilter" type="text" className="form-control" placeholder="0-2"
                     onChange={(e) => SetCRfilter(e.target.value)}></input>
-                <label>Challenge Rating (0-2)</label>
                 
             </div>
 
-            <div className="row">
+            <div className="flex flex-wrap">
             {filteredMonsters.map((monster: any, index: number) => (
                 <Card key={index} monster={monster} onAdd={() => setMyMonsters([...myMonsters, monster])} index={index} />
             ))}
