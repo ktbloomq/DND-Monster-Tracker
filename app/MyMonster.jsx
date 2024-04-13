@@ -34,11 +34,11 @@ export default function MyMonster({ monster, onRoll, onDelete }) {
             <div className="flex">
                 <div className="w-1/2">
                     <strong className="text-xl">{monster.name}</strong>
-                    <button className="btn btn-outline-danger" onClick={onDelete}>Delete</button>
+                    <button className="border border-danger rounded text-danger hover:bg-danger hover:text-light ms-1 mb-1 px-0.5" onClick={onDelete}>Delete</button>
                     <hr />
                     <div>Armor Class {monster.armor_class}</div>
                     <div>Hit Points {hp}
-                        <input type="number" className="form-control ms-2" style={{display:"inline",width:"50%"}}
+                        <input type="number" className="ms-2" style={{display:"inline",width:"50%"}}
                         onKeyDown={processHealth}></input>
                     </div>
                     <div>Speed {monster.speed.walk}

@@ -3,14 +3,34 @@
 @tailwind utilities;
 
 @layer base {
+    @media (prefers-color-scheme: dark) {
+        body {
+            color: #f8f9fa;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        body {
+            color: #212529;
+        }
+    }
+    
+    body {
+        --canvas: Canvas;
+        --primary: #0d6efd;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #212529;
+        background-color: Canvas;
+        color-scheme: light dark;
+    }
     h1 {
        @apply text-4xl;
        @apply font-bold;
     }
     input {
-        @apply border-blue-200;
-        @apply border-solid;
         @apply border;
         @apply rounded;
+        border-color: ButtonBorder;
     }
 }
