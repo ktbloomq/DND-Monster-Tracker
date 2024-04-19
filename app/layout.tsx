@@ -1,5 +1,6 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
+import './globals.css';
 // import 'bootstrap/dist/js/bootstrap';
 
 export default function RootLayout({
@@ -9,7 +10,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-dark">{children}</body>
+      <head>
+        <link rel="manifest" href="/manifest.json" />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
