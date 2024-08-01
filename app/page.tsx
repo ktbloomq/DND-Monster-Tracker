@@ -27,7 +27,7 @@ export default function Monsters() {
         let min = Number(CRfilter[0]);
         let max = Number(CRfilter[2]);
         setFilteredMonsters(monsters.results.concat(HomebrewMonsters).filter((m) => (m.slug.includes(search) && m.cr>=min &&m.cr<=max)));
-    }, [search, monsters, CRfilter]);
+    }, [search, CRfilter]);
 
     return (
         <div className="m-3">
@@ -36,7 +36,7 @@ export default function Monsters() {
                 <div className='fixed bottom-2 right-2'>
                     <div style={{display:showLog}}>
                         {diceLog.map((msg: LogEntry, index) => (
-                            <LogDisplay logEntry={msg} onClose={() => setDiceLog(diceLog.filter((item, i) => i !== index))}/>
+                            <LogDisplay key={index} logEntry={msg} onClose={() => setDiceLog(diceLog.filter((item, i) => i !== index))}/>
                         ))}
                     </div>
                     <button className="bg-body p-2 rounded float-end" onClick={toggleLog}>X</button>
