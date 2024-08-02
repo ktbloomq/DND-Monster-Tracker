@@ -1,10 +1,17 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import Monster from "./types/Monster";
 
-function calcAbilityMod(num) {
+function calcAbilityMod(num: number) {
     return (Math.floor((num-10)/2))
 }
 
-export default function MyMonster({ monster, onRoll, onDelete }) {
+interface MyMonsterProps {
+    monster: Monster,
+    onRoll:(type: string, dice: string) => void,
+    onDelete:() => void
+}
+
+export default function MyMonster({ monster, onRoll, onDelete }:MyMonsterProps) {
 
     // const [monster, setMonster] = useState();
     const [hp, setHp] = useState(0);
@@ -21,7 +28,8 @@ export default function MyMonster({ monster, onRoll, onDelete }) {
         setHp(monster.hit_points);
     }, [monster]);
 
-    const processHealth = function(e) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const processHealth = function(e: any) {
         if(e.key === "Enter") {
             setHp(hp+Number(e.target.value))
             e.target.value = null;

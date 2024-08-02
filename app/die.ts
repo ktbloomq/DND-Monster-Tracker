@@ -1,5 +1,5 @@
 export function roll(string = "1d20") {
-    let dice: number[] = parse(string);
+    const dice: number[] = parse(string);
 
     // roll
     let result = dice[0];
@@ -15,16 +15,16 @@ export function roll(string = "1d20") {
 
 function parse(string ='1d20') {
     string=string.toLowerCase();
-    let dice: number[] = [];
+    const dice: number[] = [];
     let modifier = 0;
-    let diceCountsRaw = string.match(/((-?\d+)|.)(?=d)/g);
-    let diceCounts = diceCountsRaw!.map((i) => {return parseInt(i)? parseInt(i):1});
+    const diceCountsRaw = string.match(/((-?\d+)|.)(?=d)/g);
+    const diceCounts = diceCountsRaw!.map((i) => {return parseInt(i)? parseInt(i):1});
 
-    let diceValues = string.match(/(?<=d)\d+/g)!.map((i) => {return parseInt(i)});
+    const diceValues = string.match(/(?<=d)\d+/g)!.map((i) => {return parseInt(i)});
 
-    let modifiersRaw = string.match(/([+-]|^)\d+\b/g);
+    const modifiersRaw = string.match(/([+-]|^)\d+\b/g);
     if(modifiersRaw) {
-        let modifiers = modifiersRaw!.map((n) => {return parseInt(n)});
+        const modifiers = modifiersRaw!.map((n) => {return parseInt(n)});
         modifier = modifiers.reduce((a, b) => a + b);
     }
     dice.push(modifier);

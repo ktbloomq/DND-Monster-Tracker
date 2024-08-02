@@ -1,4 +1,12 @@
-export default function LogDisplay({ logEntry, onClose }) {
+import React from "react";
+import LogEntry from "./logEntry";
+
+interface LogDisplayProps {
+    logEntry: LogEntry
+    onClose: () => void
+}
+
+export default function LogDisplay({ logEntry, onClose }: LogDisplayProps) {
     return (
         <div className="bg-body m-1 p-1 rounded">
             <div className="border-b-2 border-light flex">

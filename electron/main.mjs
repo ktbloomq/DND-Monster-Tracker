@@ -26,6 +26,7 @@ const createWindow = () => {
   } else {
     win.loadURL("http://localhost:3000");
     win.webContents.openDevTools();
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     win.webContents.on("did-fail-load", (e, code, desc) => {
       win.webContents.reloadIgnoringCache();
     });
@@ -37,6 +38,7 @@ app.on("ready", () => {
 });
 
 app.on("window-all-closed", () => {
+    // eslint-disable-next-line no-undef
     if(process.platform !== "darwin"){
         app.quit();
     }

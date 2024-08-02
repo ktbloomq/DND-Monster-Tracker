@@ -1,15 +1,16 @@
 "use client"
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import LogEntry from "./logEntry"
 import Card from "./Card";
 import MyMonster from "./MyMonster";
 import monsters from "./Monsters.json";
+import Monster from "./types/Monster"
 import LogDisplay from "./LogDisplay";
 import HomebrewMonsters from "./HomebrewMonsters.json";
 
 export default function Monsters() {
-    const [filteredMonsters, setFilteredMonsters] = useState<any>([]);
-    const [myMonsters, setMyMonsters] = useState<any>([]);
+    const [filteredMonsters, setFilteredMonsters] = useState<Monster[]>([]);
+    const [myMonsters, setMyMonsters] = useState<Monster[]>([]);
     const [diceLog, setDiceLog] = useState<LogEntry[]>([]);
     const [showLog, setShowLog] = useState("inherit");
     const [search, setSearch] = useState("");
@@ -24,8 +25,8 @@ export default function Monsters() {
     }
 
     useEffect(() => {
-        let min = Number(CRfilter[0]);
-        let max = Number(CRfilter[2]);
+        const min = Number(CRfilter[0]);
+        const max = Number(CRfilter[2]);
         setFilteredMonsters(monsters.results.concat(HomebrewMonsters).filter((m) => (m.slug.includes(search) && m.cr>=min &&m.cr<=max)));
     }, [search, CRfilter]);
 
@@ -45,10 +46,10 @@ export default function Monsters() {
             <input id='straight-roll' type="text" className="w-full" onKeyDown={(e) => {
                 if(e.key === "Enter"){setDiceLog([...diceLog, new LogEntry("manual", "", (e.target as HTMLInputElement).value)])}}}></input>
             <h1>My Monsters</h1>
-            {myMonsters.map((myMonster: any, index: number) => (
+            {myMonsters.map((myMonster: Monster, index: number) => (
                 <MyMonster key={index} monster={myMonster} 
                     onRoll={(type: string, dice: string) => setDiceLog([...diceLog, new LogEntry(myMonster.name+index, type, dice)])}
-                    onDelete={() => setMyMonsters(myMonsters.filter((item: any, i: number) => i !== index))} />
+                    onDelete={() => setMyMonsters(myMonsters.filter((item: Monster, i: number) => i !== index))} />
                 //<MyMonster key={index} uri="/api/monsters/giant-boar" />
             ))}
             <h1>All Monsters</h1>
@@ -65,7 +66,7 @@ export default function Monsters() {
                 </div>
 
                 <div className="flex flex-wrap">
-                {filteredMonsters.map((monster: any, index: number) => (
+                {filteredMonsters.map((monster: Monster, index: number) => (
                         <Card key={index} monster={monster} onAdd={addMonster} index={index} />
                 ))}
                 </div>
