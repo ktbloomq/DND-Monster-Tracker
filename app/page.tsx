@@ -56,7 +56,7 @@ export default function Monsters() {
             <form action={addMonster}>
                 <div className="mb-3">
                     <label htmlFor='search-monster'>Search Monster</label>
-                    <input id='search-monster' type="text" className="w-full block" onChange={(event) => setSearch(event.target.value)} placeholder=""></input>
+                    <input id='search-monster' type="text" className="w-full block" onChange={(event) => setSearch(event.target.value)} placeholder="" />
                 </div>
                 <div className="mb-3">
                     <label htmlFor='CRfilter'>Challenge Rating (0-2)</label>
