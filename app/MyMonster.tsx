@@ -28,7 +28,6 @@ export default function MyMonster({ monster, onRoll, onDelete }:MyMonsterProps) 
         setHp(monster.hit_points);
     }, [monster]);
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const processHealth = function(e: any) {
         if(e.key === "Enter") {
             setHp(hp+Number(e.target.value))
