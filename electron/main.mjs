@@ -36,10 +36,3 @@ const createWindow = () => {
 app.on("ready", () => {
     createWindow();
 });
-
-app.on("window-all-closed", () => {
-    // eslint-disable-next-line no-undef
-    if(process.platform !== "darwin"){
-        app.quit();
-    }
-});
