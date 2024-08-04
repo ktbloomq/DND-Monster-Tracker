@@ -30,6 +30,14 @@ export default function Monsters() {
         setFilteredMonsters(monsters.results.concat(HomebrewMonsters).filter((m) => (m.slug.includes(search) && m.cr>=min &&m.cr<=max)));
     }, [search, CRfilter]);
 
+    useEffect(() => {
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker
+            .register('/service-worker.js')
+            .then((registration) => console.log('scope is: ', registration.scope));
+        }
+      }, []);
+
     return (
         <div className="m-3">
             {/* Dice Log */}
