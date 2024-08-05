@@ -9,16 +9,18 @@ export function roll(string = "1d20") {
         // console.log("roll", i, roll);
         result += roll;
     }
-    // console.log("result", result);
     return result;
 }
 
 function parse(string ='1d20') {
     string=string.toLowerCase();
+    if(!/^((\+|\-)?(\d+d\d+|\d+))+$/g.test(string)) {
+        return [-1];
+    }
     const dice: number[] = [];
     let modifier = 0;
-    const diceCountsRaw = string.match(/((-?\d+)|.)(?=d)/g);
-    const diceCounts = diceCountsRaw!.map((i) => {return parseInt(i)? parseInt(i):1});
+    const diceCountsRaw = string.match(/(-?\d+)(?=d)/g) ?? ["1"];
+    const diceCounts = diceCountsRaw.map((i) => {return parseInt(i)? parseInt(i):1});
 
     const diceValues = string.match(/(?<=d)\d+/g)!.map((i) => {return parseInt(i)});
 
