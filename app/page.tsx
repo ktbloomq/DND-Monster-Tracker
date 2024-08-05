@@ -48,11 +48,11 @@ export default function Monsters() {
                             <LogDisplay key={index} logEntry={msg} onClose={() => setDiceLog(diceLog.filter((item, i) => i !== index))}/>
                         ))}
                     </div>
-                    <button className="bg-body p-2 rounded float-end" onClick={toggleLog}>X</button>
-                </div> : <></>}
+                    <button className="bg-body p-2 border rounded float-end" onClick={toggleLog}>X</button>
+                </div> : null}
             <h1>Straight Roll</h1>
-            <input id='straight-roll' type="text" className="w-full" onKeyDown={(e) => {
-                if(e.key === "Enter"){setDiceLog([...diceLog, new LogEntry("manual", "", (e.target as HTMLInputElement).value)])}}}></input>
+            <input id='straight-roll' type="text" className="w-full pl-1" onKeyDown={(e) => {
+                if(e.key === "Enter"){setDiceLog([...diceLog, new LogEntry("manual", "", (e.target as HTMLInputElement).value)])}}}/>
             <h1>My Monsters</h1>
             {myMonsters.map((myMonster: Monster, index: number) => (
                 <MyMonster key={index} monster={myMonster} 
@@ -64,18 +64,18 @@ export default function Monsters() {
             <form action={addMonster}>
                 <div className="mb-3">
                     <label htmlFor='search-monster'>Search Monster</label>
-                    <input id='search-monster' type="text" className="w-full block" onChange={(event) => setSearch(event.target.value)} placeholder="" />
+                    <input id='search-monster' type="text" className="w-full block  pl-1" onChange={(event) => setSearch(event.target.value)} placeholder="" />
                 </div>
                 <div className="mb-3">
                     <label htmlFor='CRfilter'>Challenge Rating (0-2)</label>
-                    <input id="CRfilter" type="text" className="w-full block" placeholder="0-2"
-                        onChange={(e) => SetCRfilter(e.target.value)}></input>
+                    <input id="CRfilter" type="text" className="w-full block  pl-1" placeholder="0-2"
+                        onChange={(e) => SetCRfilter(e.target.value)} />
                     
                 </div>
 
                 <div className="flex flex-wrap">
                 {filteredMonsters.map((monster: Monster, index: number) => (
-                        <Card key={index} monster={monster} onAdd={addMonster} index={index} />
+                        <Card key={monster.slug} monster={monster} onAdd={addMonster} index={index} />
                 ))}
                 </div>
             </form>

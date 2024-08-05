@@ -31,6 +31,7 @@
     h1 {
        @apply text-4xl;
        @apply font-bold;
+       line-height: unset;
     }
     input {
         @apply border;

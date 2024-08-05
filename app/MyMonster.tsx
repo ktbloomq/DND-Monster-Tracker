@@ -44,16 +44,17 @@ export default function MyMonster({ monster, onRoll, onDelete }:MyMonsterProps) 
                     <button className="border border-danger rounded text-danger hover:bg-danger hover:text-light ms-1 mb-1 px-0.5" onClick={onDelete}>Delete</button>
                     <hr className="border-secondary" />
                     <div>Armor Class {monster.armor_class}</div>
-                    <div>Hit Points {hp}
-                        <input type="number" className="ms-2" style={{display:"inline",width:"50%"}}
-                        onKeyDown={processHealth}></input>
+                    <div className="flex">
+                        <div>Hit Points {`${hp}/${monster.hit_points}`}</div>
+                        <input type="number" className="ms-2 flex-grow"
+                        onKeyDown={processHealth}/>
                     </div>
                     <div>Speed {monster.speed.walk}
-                        {monster.speed.burrow ? <>, burrow {monster.speed.burrow}</> : <></>}
-                        {monster.speed.climb ? <>, climb {monster.speed.climb}</> : <></>}
-                        {monster.speed.fly ? <>, fly {monster.speed.fly}</> : <></>}
-                        {monster.speed.hover ? <>, hover {monster.speed.hover}</> : <></>}
-                        {monster.speed.swim ? <>, swim {monster.speed.swim}</> : <></>}
+                        {monster.speed.burrow ? <>, burrow {monster.speed.burrow}</> : null}
+                        {monster.speed.climb ? <>, climb {monster.speed.climb}</> : null}
+                        {monster.speed.fly ? <>, fly {monster.speed.fly}</> : null}
+                        {monster.speed.hover ? <>, hover {monster.speed.hover}</> : null}
+                        {monster.speed.swim ? <>, swim {monster.speed.swim}</> : null}
                     </div>
                     <hr className="border-secondary" />
                     {/* Abilities */}
@@ -89,18 +90,49 @@ export default function MyMonster({ monster, onRoll, onDelete }:MyMonsterProps) 
                     ))}</div>
                     <div>Senses: {monster.senses}</div>
                 </div>
-                <div className="w-full lg:w-1/2">
-                    <hr className="border-secondary lg:hidden" />
-                    {monster.special_abilities ? monster.special_abilities.map((sa, index) => (
-                    <a className="block" href="#" key={index} onClick={() => {if(sa.damage_dice){onRoll(sa.name,`${sa.damage_dice}+${sa.damage_bonus ? sa.damage_bonus : 0}`)}}}>
-                        <span className="font-bold">{sa.name}. </span>{sa.desc}</a>
-                    )) : null}
+                <div className="w-full lg:w-1/2 lg:pl-1">
+                    {monster.special_abilities ? 
+                        <div>
+                        <hr className="border-secondary lg:hidden" />
+                        {monster.special_abilities.map((sa, index) => (
+                        <div className="block" key={index}>
+                            <span className="font-bold">{sa.name}. </span>
+                            {sa.damage_dice
+                                ? <span>
+                                    <button type="button" className="text-primary border-primary hover:bg-primary hover:text-light border rounded px-1 me-1"
+                                    onClick={() => {
+                                        onRoll(`${sa.name} (to hit)`, `1d20+${sa.attack_bonus}`);
+                                    }}>DC</button>
+                                    <button type="button" className="text-primary border-primary hover:bg-primary hover:text-light border rounded px-1 me-1"
+                                    onClick={() => {
+                                        onRoll(`${sa.name} (damage)`,`${sa.damage_dice}+${sa.damage_bonus ? sa.damage_bonus : 0}`);
+                                    }}>Damage</button>
+                                </span>
+                                : null
+                            }
+                            {sa.desc}
+                        </div> ))}
+                    </div> : null}
                     <hr className="border-secondary" />
                     <h5 className="text-lg font-bold">Actions</h5>
                     {monster.actions.map((action, index) => (
-                        <a href="#" className="block" key={index} onClick={() => {if(action.damage_dice){onRoll(action.name,`${action.damage_dice}+${action.damage_bonus ? action.damage_bonus : 0}`)}}}>
-                            <span className="font-bold">{action.name}. </span>{action.desc}
-                        </a>
+                        <div className="block" key={index}>
+                            <span className="font-bold">{action.name}. </span>
+                            {action.damage_dice
+                                ? <span>
+                                    <button type="button" className="text-primary border-primary hover:bg-primary hover:text-light border rounded px-1 me-1"
+                                    onClick={() => {
+                                        onRoll(`${action.name} (to hit)`, `1d20+${action.attack_bonus}`);
+                                    }}>DC</button>
+                                    <button type="button" className="text-primary border-primary hover:bg-primary hover:text-light border rounded px-1 me-1"
+                                    onClick={() => {
+                                        onRoll(`${action.name} (damage)`,`${action.damage_dice}+${action.damage_bonus ? action.damage_bonus : 0}`);
+                                    }}>Damage</button>
+                                </span>
+                                : null
+                            }
+                            {action.desc}
+                        </div>
                     ))}
                 </div>
             </div>

@@ -4,7 +4,7 @@ export default function Card({ monster, onAdd, index }) {
       <div className="2xl:w-1/4 xl:w-1/3 md:w-1/2 w-full p-1">
         <div className="border border-secondary rounded">
           <div className="flex align-items-center peer">
-            <input id={"monster-"+index} type="radio" name="new monster" value={JSON.stringify(monster)}/>
+            <input id={"monster-"+index} type="radio" className="mx-1 my-auto" name="new monster" value={JSON.stringify(monster)}/>
             <label htmlFor={"monster-"+index} className="text-lg font-bold self-center me-1">{monster.name}</label>
             <p className="self-center shrink-0 ms-auto me-1">CR {monster.challenge_rating} HP {monster.hit_points}</p>
             <button tabIndex="-1" className="text-primary border-primary hover:bg-primary hover:text-light border rounded my-1 me-1">
@@ -46,7 +46,7 @@ export default function Card({ monster, onAdd, index }) {
                   <span>{action.name}:
                   {action.damage_dice ? `${action.damage_dice}+${action.damage_bonus}` : ""}</span>
                 </div>
-              )) : <></>}
+              )) : null}
             </div>
           </div>
         </div>
