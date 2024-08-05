@@ -50,9 +50,11 @@ export default function Monsters() {
                     </div>
                     <button className="bg-body p-2 border rounded float-end" onClick={toggleLog}>X</button>
                 </div> : null}
-            <h1>Straight Roll</h1>
-            <input id='straight-roll' type="text" className="w-full pl-1" onKeyDown={(e) => {
-                if(e.key === "Enter"){setDiceLog([...diceLog, new LogEntry("manual", "", (e.target as HTMLInputElement).value)])}}}/>
+            <h1>Manual Roll</h1>
+            <form action={manualRoll} className="flex">
+                <input id="manual-roll" name="manual-roll" type="text" className="flex-grow pl-1" placeholder="1d20+1" />
+                <button className="text-primary border-primary hover:bg-primary hover:text-light border rounded px-1 m-1">Roll</button>
+            </form>
             <h1>My Monsters</h1>
             {myMonsters.map((myMonster: Monster, index: number) => (
                 <MyMonster key={index} monster={myMonster} 
@@ -82,10 +84,13 @@ export default function Monsters() {
         </div>
     );
 
+    function manualRoll(formData: FormData) {
+        const roll = formData.get('manual-roll') as string;
+        setDiceLog([...diceLog, new LogEntry("manual", "", roll)])
+    }
+
     function addMonster(formData: FormData) {
-        console.log("formData",formData);
         const newMonster = JSON.parse(formData.get('new monster') as string);
-        console.log("newMonster", newMonster);
         setMyMonsters([...myMonsters, newMonster]);
     }
 }
